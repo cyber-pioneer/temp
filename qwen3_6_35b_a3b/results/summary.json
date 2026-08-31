@@ -1,0 +1,46 @@
+{
+  "actual_capture": {
+    "trace_files": 11,
+    "ranks": [
+      0
+    ],
+    "cpu_operator_events": 59448,
+    "cpu_operator_events_with_shapes": 57226,
+    "cpu_operator_events_with_dtypes": 57226,
+    "operator_rows": 610,
+    "effective_operator_rows": 605,
+    "unique_effective_operator_names": 57,
+    "no_input_metadata_events": 2222,
+    "no_input_metadata_operator_names": [
+      "AOTDispatcher Runtime Wrapper Prologue",
+      "Pregraph bytecode",
+      "Torch-Compiled Region: 0/0",
+      "Torch-Compiled Region: 0/1",
+      "TorchDynamo Cache Lookup"
+    ],
+    "csv_event_output_coverage_pct": 100.0
+  },
+  "runtime": {
+    "trace_files": 1,
+    "ranks": [
+      0
+    ],
+    "cpu_operator_events": 1473,
+    "cpu_operator_events_with_shapes": 1457,
+    "cpu_operator_events_with_dtypes": 1457,
+    "operator_rows": 129,
+    "effective_operator_rows": 125,
+    "unique_effective_operator_names": 44,
+    "no_input_metadata_events": 16,
+    "no_input_metadata_operator_names": [
+      "AOTDispatcher Runtime Wrapper Prologue",
+      "Pregraph bytecode",
+      "Torch-Compiled Region: 1/0",
+      "TorchDynamo Cache Lookup"
+    ],
+    "csv_event_output_coverage_pct": 100.0
+  },
+  "parsed_rank": 0,
+  "logical_union_shape_dtype_rows": 675,
+  "logical_union_unique_operator_names": 75
+}
