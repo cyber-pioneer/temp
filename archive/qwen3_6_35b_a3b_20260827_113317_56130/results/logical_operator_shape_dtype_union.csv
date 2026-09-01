@@ -1,0 +1,246 @@
+operator,input_shapes,input_dtypes,actual_capture_call_count,runtime_call_count,observed_in
+_C::weak_ref_tensor,"[[1,1,256]]","[""c10::BFloat16""]",40,0,actual_capture
+_C::weak_ref_tensor,"[[1,16,128]]","[""c10::BFloat16""]",120,0,actual_capture
+_C::weak_ref_tensor,"[[1,16]]","[""c10::BFloat16""]",120,0,actual_capture
+_C::weak_ref_tensor,"[[1,2048]]","[""c10::BFloat16""]",186,0,actual_capture
+_C::weak_ref_tensor,"[[1,4096]]","[""c10::BFloat16""]",60,0,actual_capture
+_C::weak_ref_tensor,"[[1,8,256]]","[""c10::BFloat16""]",40,0,actual_capture
+_C_custom_ar::all_reduce,"[[],[1,2048],[1,2048],[],[]]","[""Scalar"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",160,4,"actual_capture,runtime"
+aten::_to_copy,"[[1,1],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""""]",0,4,runtime
+aten::_to_copy,"[[1,248320],[],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""","""",""Scalar"",""""]",0,4,runtime
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""int"",""Scalar"","""","""","""",""Scalar"",""""]",0,8,runtime
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""""]",6,0,actual_capture
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""long int"",""Scalar"","""","""","""",""Scalar"",""""]",0,4,runtime
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"","""","""",""Scalar"",""""]",4,0,actual_capture
+aten::add,"[[1],[1],[],[1]]","[""int"",""int"",""Scalar"",""int""]",0,4,runtime
+aten::add,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",0,4,runtime
+aten::add,"[[1],[1],[]]","[""long int"",""long int"",""Scalar""]",0,4,runtime
+aten::alias,"[[1,248320]]","[""c10::BFloat16""]",0,4,runtime
+aten::alias,"[[3,1]]","[""long int""]",0,1,runtime
+aten::argmax,"[[1,248320],[],[]]","[""float"",""Scalar"",""Scalar""]",0,4,runtime
+aten::as_strided,"[[1,16,128],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",60,0,actual_capture
+aten::as_strided,"[[1,16],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",120,0,actual_capture
+aten::as_strided,"[[1,1],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""""]",0,4,runtime
+aten::as_strided,"[[1,1],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""""]",40,0,actual_capture
+aten::as_strided,"[[1,1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",30,63,"actual_capture,runtime"
+aten::as_strided,"[[1,1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""""]",0,4,runtime
+aten::as_strided,"[[1,2,1056,1,256],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",60,0,actual_capture
+aten::as_strided,"[[1,2048],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",4,4,"actual_capture,runtime"
+aten::as_strided,"[[1,2048],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",320,4,"actual_capture,runtime"
+aten::as_strided,"[[1,248320],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",0,4,runtime
+aten::as_strided,"[[1,3,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",30,0,actual_capture
+aten::as_strided,"[[1,32],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",8,16,"actual_capture,runtime"
+aten::as_strided,"[[1,4096,1],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",60,0,actual_capture
+aten::as_strided,"[[1,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",60,0,actual_capture
+aten::as_strided,"[[1,8,256],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",40,0,actual_capture
+aten::as_strided,"[[1,8],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",160,0,actual_capture
+aten::as_strided,"[[1,8],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",160,0,actual_capture
+aten::as_strided,"[[16384],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",640,0,actual_capture
+aten::as_strided,"[[1],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""Scalar""]",2,12,"actual_capture,runtime"
+aten::as_strided,"[[1],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",0,6,runtime
+aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""""]",6,4,"actual_capture,runtime"
+aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",148,96,"actual_capture,runtime"
+aten::as_strided,"[[1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",16,16,"actual_capture,runtime"
+aten::as_strided,"[[2,1,124160],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",0,4,runtime
+aten::as_strided,"[[2048,2048],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",320,0,actual_capture
+aten::as_strided,"[[2048,32],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",240,0,actual_capture
+aten::as_strided,"[[2048,4608],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",80,0,actual_capture
+aten::as_strided,"[[2048,6144],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",240,0,actual_capture
+aten::as_strided,"[[2],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""""]",6,0,actual_capture
+aten::as_strided,"[[2],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",40,92,"actual_capture,runtime"
+aten::as_strided,"[[3,1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""""]",0,4,runtime
+aten::as_strided,"[[3,8193],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",4,13,"actual_capture,runtime"
+aten::as_strided,"[[3672,2,1056,1,256],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",60,0,actual_capture
+aten::as_strided,"[[3672,3,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",30,0,actual_capture
+aten::as_strided,"[[536870912],[],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList"",""Scalar""]",320,0,actual_capture
+aten::as_strided,"[[8,512],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",320,0,actual_capture
+aten::as_strided,"[[8192,2048],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",4,8,"actual_capture,runtime"
+aten::as_strided,"[[8192],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",0,13,runtime
+aten::as_strided,"[[8192],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",18,52,"actual_capture,runtime"
+aten::clone,"[[3,1],[]]","[""long int"",""Scalar""]",0,4,runtime
+aten::contiguous,"[[3,1],[]]","[""long int"",""Scalar""]",0,4,runtime
+aten::copy_,"[[0],[],[]]","[""bool"",""bool"",""Scalar""]",2,4,"actual_capture,runtime"
+aten::copy_,"[[1,1],[1,1],[]]","[""int"",""int"",""Scalar""]",6,16,"actual_capture,runtime"
+aten::copy_,"[[1,2048],[1,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",320,4,"actual_capture,runtime"
+aten::copy_,"[[1,248320],[1,248320],[]]","[""float"",""c10::BFloat16"",""Scalar""]",0,4,runtime
+aten::copy_,"[[1,32],[1,32],[]]","[""int"",""int"",""Scalar""]",2,4,"actual_capture,runtime"
+aten::copy_,"[[1],[1],[]]","[""bool"",""bool"",""Scalar""]",0,4,runtime
+aten::copy_,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",14,28,"actual_capture,runtime"
+aten::copy_,"[[1],[1],[]]","[""int"",""long int"",""Scalar""]",0,4,runtime
+aten::copy_,"[[1],[1],[]]","[""long int"",""int"",""Scalar""]",0,8,runtime
+aten::copy_,"[[1],[1],[]]","[""long int"",""long int"",""Scalar""]",4,12,"actual_capture,runtime"
+aten::copy_,"[[1],[],[]]","[""int"",""int"",""Scalar""]",2,0,actual_capture
+aten::copy_,"[[2],[2],[]]","[""int"",""int"",""Scalar""]",8,16,"actual_capture,runtime"
+aten::copy_,"[[3,1],[3,1],[]]","[""long int"",""long int"",""Scalar""]",0,17,runtime
+aten::detach,[[1]],"[""int""]",0,8,runtime
+aten::diff,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""",""""]",6,0,actual_capture
+aten::embedding,"[[124160,2048],[1],[],[],[]]","[""c10::BFloat16"",""long int"",""Scalar"",""Scalar"",""Scalar""]",0,4,runtime
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""","""",""""]",4,0,actual_capture
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""",""Scalar"",""""]",1806,20,"actual_capture,runtime"
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""","""",""Scalar""]",0,8,runtime
+aten::empty_like,"[[1,1],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""",""Scalar"",""""]",160,0,actual_capture
+aten::empty_like,"[[1,2048],[],[],[],[],[]]","[""c10::BFloat16"","""","""","""",""Scalar"",""""]",640,4,"actual_capture,runtime"
+aten::empty_like,"[[1],[],[],[],[],[]]","[""int"",""Scalar"","""","""",""Scalar"",""""]",18,32,"actual_capture,runtime"
+aten::empty_like,"[[1],[],[],[],[],[]]","[""long int"",""Scalar"","""","""",""Scalar"",""""]",0,4,runtime
+aten::empty_like,"[[3,1],[],[],[],[],[]]","[""long int"",""Scalar"","""","""","""",""Scalar""]",0,4,runtime
+aten::empty_like,"[[3,1],[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"","""","""",""Scalar""]",0,4,runtime
+aten::empty_strided,"[[],[],[],[],[],[]]","[""ScalarList"",""ScalarList"",""Scalar"",""Scalar"","""",""Scalar""]",828,60,"actual_capture,runtime"
+aten::expand,"[[1,1],[],[]]","[""bool"",""ScalarList"",""Scalar""]",0,4,runtime
+aten::expand,"[[3,1],[],[]]","[""long int"",""ScalarList"",""Scalar""]",0,4,runtime
+aten::expand,"[[],[],[]]","[""float"",""ScalarList"",""Scalar""]",40,0,actual_capture
+aten::expand_as,"[[3,1],[3,1]]","[""long int"",""long int""]",0,4,runtime
+aten::fill_,"[[0,1],[]]","[""int"",""Scalar""]",6,12,"actual_capture,runtime"
+aten::fill_,"[[0,32],[]]","[""int"",""Scalar""]",2,4,"actual_capture,runtime"
+aten::fill_,"[[0],[]]","[""bool"",""bool""]",2,4,"actual_capture,runtime"
+aten::fill_,"[[0],[]]","[""int"",""Scalar""]",8,20,"actual_capture,runtime"
+aten::fill_,"[[0],[]]","[""int"",""int""]",6,12,"actual_capture,runtime"
+aten::fill_,"[[0],[]]","[""long int"",""Scalar""]",16,16,"actual_capture,runtime"
+aten::fill_,"[[1,8,256],[]]","[""c10::BFloat16"",""Scalar""]",20,0,actual_capture
+aten::fill_,"[[1],[]]","[""int"",""Scalar""]",162,4,"actual_capture,runtime"
+aten::fill_,"[[1],[]]","[""int"",""int""]",2,0,actual_capture
+aten::fill_,"[[1],[]]","[""long int"",""Scalar""]",184,0,actual_capture
+aten::flatten,"[[1,32768],[],[]]","[""int"",""Scalar"",""Scalar""]",0,4,runtime
+aten::flatten,"[[16384],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",320,0,actual_capture
+aten::index,"[[1,2048],[]]","[""c10::BFloat16"",""""]",4,4,"actual_capture,runtime"
+aten::index,"[[1],[]]","[""int"",""""]",0,4,runtime
+aten::index_select,"[[32768],[],[1],[1]]","[""int"",""Scalar"",""long int"",""int""]",0,4,runtime
+aten::lift_fresh,[[1]],"[""int""]",0,4,runtime
+aten::lift_fresh,[[1]],"[""long int""]",4,4,"actual_capture,runtime"
+aten::lift_fresh,"[[3,1]]","[""long int""]",0,1,runtime
+aten::lift_fresh,[[]],"[""bool""]",2,4,"actual_capture,runtime"
+aten::lift_fresh,[[]],"[""int""]",2,0,actual_capture
+aten::linear,"[[1,2048],[1,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",160,0,actual_capture
+aten::linear,"[[1,2048],[124160,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",0,4,runtime
+aten::linear,"[[1,2048],[256,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",160,0,actual_capture
+aten::linear,"[[1,2048],[512,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",160,0,actual_capture
+aten::linear,"[[1,256],[2048,256],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",160,0,actual_capture
+aten::lt,"[[1],[1]]","[""int"",""int""]",2,4,"actual_capture,runtime"
+aten::masked_fill_,"[[1,2048],[1,1],[]]","[""c10::BFloat16"",""bool"",""Scalar""]",0,4,runtime
+aten::mm,"[[1,2048],[2048,2048],[1,2048]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16""]",160,0,actual_capture
+aten::mm,"[[1,2048],[2048,32],[1,32]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16""]",120,0,actual_capture
+aten::mm,"[[1,2048],[2048,4608],[1,4608]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16""]",40,0,actual_capture
+aten::mm,"[[1,2048],[2048,6144],[1,6144]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16""]",120,0,actual_capture
+aten::moveaxis,"[[1],[],[]]","[""int"",""Scalar"",""Scalar""]",6,0,actual_capture
+aten::movedim,"[[1],[],[]]","[""int"",""ScalarList"",""ScalarList""]",6,0,actual_capture
+aten::movedim,"[[2,1,124160],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",0,4,runtime
+aten::movedim,"[[2,1,124160],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList""]",0,4,runtime
+aten::mul,"[[1,1],[1,2048]]","[""c10::BFloat16"",""c10::BFloat16""]",160,0,actual_capture
+aten::numpy_T,"[[2048,2048]]","[""c10::BFloat16""]",320,0,actual_capture
+aten::numpy_T,"[[2048,32]]","[""c10::BFloat16""]",240,0,actual_capture
+aten::numpy_T,"[[2048,4608]]","[""c10::BFloat16""]",80,0,actual_capture
+aten::numpy_T,"[[2048,6144]]","[""c10::BFloat16""]",240,0,actual_capture
+aten::permute,"[[1],[]]","[""int"",""ScalarList""]",6,0,actual_capture
+aten::permute,"[[2,1,124160],[]]","[""c10::BFloat16"",""ScalarList""]",0,4,runtime
+aten::permute,"[[2048,2048],[]]","[""c10::BFloat16"",""ScalarList""]",320,0,actual_capture
+aten::permute,"[[2048,32],[]]","[""c10::BFloat16"",""ScalarList""]",240,0,actual_capture
+aten::permute,"[[2048,4608],[]]","[""c10::BFloat16"",""ScalarList""]",80,0,actual_capture
+aten::permute,"[[2048,6144],[]]","[""c10::BFloat16"",""ScalarList""]",240,0,actual_capture
+aten::permute,"[[2],[]]","[""int"",""ScalarList""]",6,0,actual_capture
+aten::record_stream,"[[1,2048],[]]","[""c10::BFloat16"",""""]",160,0,actual_capture
+aten::reshape,"[[1,16,128],[]]","[""c10::BFloat16"",""ScalarList""]",60,0,actual_capture
+aten::reshape,"[[1,2,124160],[]]","[""c10::BFloat16"",""ScalarList""]",0,4,runtime
+aten::reshape,"[[1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",60,0,actual_capture
+aten::reshape,"[[16384],[]]","[""c10::BFloat16"",""ScalarList""]",320,0,actual_capture
+aten::reshape,"[[1],[]]","[""bool"",""ScalarList""]",0,4,runtime
+aten::reshape,"[[1],[]]","[""int"",""ScalarList""]",0,4,runtime
+aten::reshape,"[[1],[]]","[""long int"",""ScalarList""]",4,8,"actual_capture,runtime"
+aten::reshape,"[[2,124160],[]]","[""c10::BFloat16"",""ScalarList""]",0,4,runtime
+aten::resolve_conj,[[1]],"[""int""]",0,8,runtime
+aten::resolve_neg,[[1]],"[""int""]",0,8,runtime
+aten::result_type,"[[1,1],[1,2048]]","[""c10::BFloat16"",""c10::BFloat16""]",160,0,actual_capture
+aten::select,"[[1,1],[],[]]","[""int"",""Scalar"",""Scalar""]",6,15,"actual_capture,runtime"
+aten::select,"[[2],[],[]]","[""int"",""Scalar"",""Scalar""]",6,12,"actual_capture,runtime"
+aten::sigmoid,"[[1,1]]","[""c10::BFloat16""]",160,0,actual_capture
+aten::slice,"[[1,16,128],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",60,0,actual_capture
+aten::slice,"[[1,16],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",120,0,actual_capture
+aten::slice,"[[1,1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",24,48,"actual_capture,runtime"
+aten::slice,"[[1,2048],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",320,4,"actual_capture,runtime"
+aten::slice,"[[1,32],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",8,16,"actual_capture,runtime"
+aten::slice,"[[1,4096],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",60,0,actual_capture
+aten::slice,"[[1,8,256],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",40,0,actual_capture
+aten::slice,"[[1,8],[],[],[],[]]","[""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",160,0,actual_capture
+aten::slice,"[[1,8],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",160,0,actual_capture
+aten::slice,"[[16384],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",640,0,actual_capture
+aten::slice,"[[1],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",2,12,"actual_capture,runtime"
+aten::slice,"[[1],[],[],[],[]]","[""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",0,6,runtime
+aten::slice,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",148,96,"actual_capture,runtime"
+aten::slice,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",16,16,"actual_capture,runtime"
+aten::slice,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",34,80,"actual_capture,runtime"
+aten::slice,"[[3,8193],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4,13,"actual_capture,runtime"
+aten::slice,"[[536870912],[],[],[],[]]","[""unsigned char"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",320,0,actual_capture
+aten::slice,"[[8,512],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",320,0,actual_capture
+aten::slice,"[[8192,2048],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4,8,"actual_capture,runtime"
+aten::slice,"[[8192],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",0,13,runtime
+aten::slice,"[[8192],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",18,52,"actual_capture,runtime"
+aten::squeeze,"[[1,1],[]]","[""long int"",""Scalar""]",0,4,runtime
+aten::squeeze,"[[1,4096,1],[]]","[""c10::BFloat16"",""Scalar""]",60,0,actual_capture
+aten::sub,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",12,24,"actual_capture,runtime"
+aten::sub,"[[1],[],[]]","[""int"",""long int"",""Scalar""]",6,4,"actual_capture,runtime"
+aten::to,"[[1,1],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",0,4,runtime
+aten::to,"[[1,248320],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",0,4,runtime
+aten::to,"[[1,4096],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",120,0,actual_capture
+aten::to,"[[1],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",6,8,"actual_capture,runtime"
+aten::to,"[[1],[],[],[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",4,0,actual_capture
+aten::to,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""""]",0,8,runtime
+aten::to,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""""]",0,12,runtime
+aten::transpose,"[[1,3,4096],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",30,0,actual_capture
+aten::transpose,"[[3672,3,4096],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",30,0,actual_capture
+aten::unbind,"[[1,2,1056,1,256],[]]","[""c10::BFloat16"",""Scalar""]",30,0,actual_capture
+aten::unbind,"[[3672,2,1056,1,256],[]]","[""c10::BFloat16"",""Scalar""]",30,0,actual_capture
+aten::unsqueeze,"[[1,16,128],[]]","[""c10::BFloat16"",""Scalar""]",60,0,actual_capture
+aten::unsqueeze,"[[1,4096],[]]","[""c10::BFloat16"",""Scalar""]",60,0,actual_capture
+aten::unsqueeze,"[[1],[]]","[""bool"",""Scalar""]",0,4,runtime
+aten::unsqueeze,"[[1],[]]","[""int"",""Scalar""]",0,4,runtime
+aten::view,"[[1,124160],[]]","[""c10::BFloat16"",""ScalarList""]",0,4,runtime
+aten::view,"[[1,16,128],[]]","[""c10::BFloat16"",""ScalarList""]",60,0,actual_capture
+aten::view,"[[1,1],[]]","[""c10::BFloat16"",""ScalarList""]",160,0,actual_capture
+aten::view,"[[1,2,124160],[]]","[""c10::BFloat16"",""ScalarList""]",0,4,runtime
+aten::view,"[[1,2048],[]]","[""c10::BFloat16"",""ScalarList""]",1440,4,"actual_capture,runtime"
+aten::view,"[[1,256],[]]","[""c10::BFloat16"",""ScalarList""]",320,0,actual_capture
+aten::view,"[[1,32768],[]]","[""int"",""ScalarList""]",0,4,runtime
+aten::view,"[[1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",60,0,actual_capture
+aten::view,"[[1,512],[]]","[""c10::BFloat16"",""ScalarList""]",160,0,actual_capture
+aten::view,"[[1,8,2048],[]]","[""c10::BFloat16"",""ScalarList""]",160,0,actual_capture
+aten::view,"[[1,8,512],[]]","[""c10::BFloat16"",""ScalarList""]",160,0,actual_capture
+aten::view,"[[1,8],[]]","[""int"",""ScalarList""]",160,0,actual_capture
+aten::view,"[[16384],[]]","[""c10::BFloat16"",""ScalarList""]",640,0,actual_capture
+aten::view,"[[1],[]]","[""bool"",""ScalarList""]",0,4,runtime
+aten::view,"[[1],[]]","[""int"",""ScalarList""]",0,4,runtime
+aten::view,"[[1],[]]","[""long int"",""ScalarList""]",4,12,"actual_capture,runtime"
+aten::view,"[[2,124160],[]]","[""c10::BFloat16"",""ScalarList""]",0,4,runtime
+aten::view,"[[2048],[]]","[""c10::BFloat16"",""ScalarList""]",160,0,actual_capture
+aten::view,"[[32768],[]]","[""unsigned char"",""Scalar""]",320,0,actual_capture
+aten::view,"[[4096,1,4],[]]","[""c10::BFloat16"",""ScalarList""]",60,0,actual_capture
+aten::view,"[[4096],[]]","[""c10::BFloat16"",""ScalarList""]",160,0,actual_capture
+aten::view,"[[],[]]","[""float"",""ScalarList""]",40,0,actual_capture
+aten::zero_,[[1]],"[""bool""]",0,4,runtime
+aten::zeros,"[[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""",""Scalar""]",0,4,runtime
+c10d::_allgather_base_,"[[2,124160],[1,124160],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"","""",""Scalar"",""Scalar""]",0,4,runtime
+record_param_comms,"[[1,124160],[],[],[],[],[],[],[],[],[]]","[""c10::BFloat16"","""","""",""Scalar"","""",""ScalarList"",""ScalarList"",""Scalar"",""Scalar"",""Scalar""]",0,4,runtime
+triton_per_fused_1,"[[1,16,128],[128],[1,16,128],[16,128],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",120,0,actual_capture
+triton_poi_fused_0,"[[1,16,128],[]]","[""c10::BFloat16"",""Scalar""]",84,0,actual_capture
+triton_poi_fused_0,"[[1,8,256],[1,2048],[1,2048],[1,16,128],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",36,0,actual_capture
+triton_poi_fused_0,"[[3,1],[1048576,64],[1,32],[1,32],[],[]]","[""long int"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",40,0,actual_capture
+triton_poi_fused_2,"[[1,32],[1,16],[1,16],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",4,0,actual_capture
+triton_poi_fused_3,"[[1,32],[1,16],[1,16],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",36,0,actual_capture
+triton_poi_fused_5,"[[1,32],[1,16],[1,16],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",80,0,actual_capture
+triton_poi_fused_5,"[[1,4608],[1,8,256],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",40,0,actual_capture
+triton_poi_fused_7,"[[1,4608],[1,8,1],[256],[1,32],[1,32],[1,1,1],[256],[1,8,64],[1,8,192],[1,1,64],[1,1,192],[],[],[],[]]","[""c10::BFloat16"",""float"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""float"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",40,0,actual_capture
+triton_poi_fused___and_____or___add_ge_lt_mul_sub_0,"[[1],[1],[],[],[],[],[],[]]","[""int"",""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",0,4,runtime
+triton_poi_fused___and_____or___bitwise_not_ge_lt_1,"[[1],[1],[],[],[],[],[]]","[""int"",""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",0,4,runtime
+triton_poi_fused__to_copy__unsafe_view_add_clone_linear_mean_mul_pow_rsqrt_silu_view_2,"[[16,128],[1,2048],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",120,0,actual_capture
+triton_poi_fused_add_2,"[[1,2048],[1,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",40,0,actual_capture
+triton_poi_fused_add_4,"[[1,2048],[1,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",120,0,actual_capture
+triton_poi_fused_mul_sigmoid_view_0,"[[1,8,256],[1,2048],[1,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",4,0,actual_capture
+triton_poi_fused_mul_silu_slice_0,"[[1,512],[1,256],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",160,0,actual_capture
+triton_red_fused_1,"[[1,2048],[2048],[1,2048],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",4,0,actual_capture
+triton_red_fused_6,"[[1,4608],[1,8,1],[1,1,1],[],[]]","[""c10::BFloat16"",""float"",""float"",""Scalar"",""Scalar""]",40,0,actual_capture
+triton_red_fused__to_copy_add_copy__fused_add_rms_norm_moe_forward_shared_1,"[[1,2048],[1,2048],[2048],[1,2048],[1,2048],[1,2048],[1,2048],[1,2048],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",40,0,actual_capture
+triton_red_fused__to_copy_add_copy__fused_add_rms_norm_moe_forward_shared_3,"[[1,2048],[1,2048],[2048],[1,2048],[1,2048],[1,2048],[1,2048],[1,2048],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",120,0,actual_capture
+vllm::all_gather,"[[1,124160],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""""]",0,4,runtime
+vllm::all_reduce,"[[1,2048],[]]","[""c10::BFloat16"",""""]",160,4,"actual_capture,runtime"
+vllm::flashinfer_trtllm_fused_allreduce_norm,"[[1,2048],[1,2048],[2048],[],[],[],[],[],[],[],[],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"","""","""","""","""",""Scalar""]",160,0,actual_capture
+vllm::moe_forward_shared,"[[1,2048],[1,2048],[1,2048],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"","""","""",""Scalar""]",160,0,actual_capture
+vllm::qwen_gdn_attention_core,"[[1,4096],[1,16],[1,16],[1,16,128],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"","""",""Scalar""]",120,0,actual_capture
+vllm::unified_attention_with_output,"[[1,8,256],[1,1,256],[1,1,256],[1,8,256],[],[],[],[0]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"","""","""","""",""c10::BFloat16""]",40,0,actual_capture
+vllm::unified_kv_cache_update,"[[1,1,256],[1,1,256],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",40,0,actual_capture

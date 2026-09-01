@@ -1,0 +1,174 @@
+rank,operator,input_shapes,input_dtypes,metadata_status,call_count
+0,aten::empty_strided,"[[],[],[],[],[],[]]","[""ScalarList"",""ScalarList"",""Scalar"",""Scalar"","""",""Scalar""]",shape_and_dtype,96
+0,aten::as_strided,"[[8192],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,89
+0,aten::slice,"[[8192],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,89
+0,aten::as_strided,"[[2],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,88
+0,aten::slice,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,80
+0,aten::as_strided,"[[8192],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,72
+0,aten::slice,"[[8192],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,72
+0,aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,64
+0,aten::slice,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,64
+0,aten::copy_,"[[1],[1],[]]","[""long int"",""long int"",""Scalar""]",shape_and_dtype,52
+0,aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""","""",""""]",shape_and_dtype,52
+0,aten::as_strided,"[[1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,44
+0,aten::copy_,"[[1],[1],[]]","[""int"",""long int"",""Scalar""]",shape_and_dtype,44
+0,aten::copy_,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,36
+0,aten::as_strided,"[[1,512],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,32
+0,aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""",""Scalar"",""""]",shape_and_dtype,32
+0,aten::slice,"[[1,512],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,32
+0,aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""int"",""Scalar"","""","""","""",""Scalar"",""""]",shape_and_dtype,28
+0,aten::copy_,"[[1],[1],[]]","[""long int"",""int"",""Scalar""]",shape_and_dtype,28
+0,aten::reshape,"[[1],[]]","[""int"",""ScalarList""]",shape_and_dtype,28
+0,aten::to,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""""]",shape_and_dtype,28
+0,aten::view,"[[1],[]]","[""int"",""ScalarList""]",shape_and_dtype,28
+0,aten::as_strided,"[[1,128],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,24
+0,aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""""]",shape_and_dtype,24
+0,aten::slice,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,24
+0,aten::sub,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,24
+0,aten::_local_scalar_dense,[[]],"[""bool""]",shape_and_dtype,20
+0,aten::_local_scalar_dense,[[]],"[""int""]",shape_and_dtype,20
+0,aten::_local_scalar_dense,[[]],"[""long int""]",shape_and_dtype,20
+0,aten::_pin_memory,"[[1],[]]","[""long int"",""""]",shape_and_dtype,20
+0,aten::_to_copy,"[[],[],[],[],[],[],[]]","[""long int"",""Scalar"","""","""","""",""Scalar"",""""]",shape_and_dtype,20
+0,aten::all,[[1]],"[""bool""]",shape_and_dtype,20
+0,aten::arange,"[[],[],[],[0]]","[""Scalar"",""Scalar"",""Scalar"",""long int""]",shape_and_dtype,20
+0,aten::arange,"[[],[],[],[],[]]","[""Scalar"","""","""","""",""Scalar""]",shape_and_dtype,20
+0,aten::as_strided,"[[1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""""]",shape_and_dtype,20
+0,aten::copy_,"[[],[],[]]","[""bool"",""bool"",""Scalar""]",shape_and_dtype,20
+0,aten::copy_,"[[],[],[]]","[""int"",""long int"",""Scalar""]",shape_and_dtype,20
+0,aten::cumsum,"[[1],[],[]]","[""int"",""Scalar"",""""]",shape_and_dtype,20
+0,aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""","""",""Scalar""]",shape_and_dtype,20
+0,aten::empty_like,"[[1],[],[],[],[],[]]","[""int"",""Scalar"","""","""","""",""Scalar""]",shape_and_dtype,20
+0,aten::expand,"[[1],[],[]]","[""int"",""ScalarList"",""Scalar""]",shape_and_dtype,20
+0,aten::expand,"[[1],[],[]]","[""long int"",""ScalarList"",""Scalar""]",shape_and_dtype,20
+0,aten::expand_as,"[[1],[1]]","[""long int"",""int""]",shape_and_dtype,20
+0,aten::fill_,"[[0],[]]","[""long int"",""Scalar""]",shape_and_dtype,20
+0,aten::flatten,"[[1],[],[]]","[""long int"",""Scalar"",""Scalar""]",shape_and_dtype,20
+0,aten::ge,"[[1],[]]","[""int"",""Scalar""]",shape_and_dtype,20
+0,aten::index_select,"[[1],[],[1]]","[""long int"",""Scalar"",""int""]",shape_and_dtype,20
+0,aten::is_pinned,"[[1],[]]","[""long int"",""""]",shape_and_dtype,20
+0,aten::item,[[]],"[""bool""]",shape_and_dtype,20
+0,aten::item,[[]],"[""int""]",shape_and_dtype,20
+0,aten::item,[[]],"[""long int""]",shape_and_dtype,20
+0,aten::pin_memory,"[[1],[]]","[""long int"",""""]",shape_and_dtype,20
+0,aten::repeat_interleave,"[[1],[1],[],[]]","[""long int"",""int"","""",""""]",shape_and_dtype,20
+0,aten::repeat_interleave,"[[1],[]]","[""int"",""""]",shape_and_dtype,20
+0,aten::resize_,"[[0],[],[]]","[""long int"",""ScalarList"",""""]",shape_and_dtype,20
+0,aten::select,"[[1],[],[]]","[""long int"",""Scalar"",""Scalar""]",shape_and_dtype,20
+0,aten::set_,"[[0],[],[],[],[]]","[""long int"","""",""Scalar"",""ScalarList"",""ScalarList""]",shape_and_dtype,20
+0,aten::slice,"[[1,128],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,20
+0,aten::to,"[[],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""""]",shape_and_dtype,20
+0,aten::to,"[[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""""]",shape_and_dtype,20
+0,aten::view,"[[1],[]]","[""bool"",""ScalarList""]",shape_and_dtype,20
+0,aten::view_as,"[[1],[]]","[""bool"",""bool""]",shape_and_dtype,20
+0,aten::as_strided,"[[1,4096],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,16
+0,aten::as_strided,"[[1,8192],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,16
+0,aten::empty_like,"[[1],[],[],[],[],[]]","[""int"",""Scalar"","""","""",""Scalar"",""""]",shape_and_dtype,16
+0,aten::narrow,"[[2],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,16
+0,aten::slice,"[[1,4096],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,16
+0,aten::slice,"[[1,8192],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,16
+0,aten::as_strided,"[[1],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,12
+0,aten::copy_,"[[1],[1],[]]","[""bool"",""bool"",""Scalar""]",shape_and_dtype,12
+0,aten::empty_like,"[[1],[],[],[],[],[]]","[""long int"",""Scalar"","""","""",""Scalar"",""""]",shape_and_dtype,12
+0,aten::fill_,"[[8192],[]]","[""long int"",""Scalar""]",shape_and_dtype,12
+0,aten::lift_fresh,[[1]],"[""int""]",shape_and_dtype,12
+0,aten::lift_fresh,[[]],"[""int""]",shape_and_dtype,12
+0,aten::slice,"[[1],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,12
+0,aten::view,"[[1],[]]","[""long int"",""ScalarList""]",shape_and_dtype,12
+0,aten::_pin_memory,"[[1],[]]","[""int"",""""]",shape_and_dtype,8
+0,aten::as_strided,"[[8192,1,128],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,8
+0,aten::as_strided,"[[8192,256],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,8
+0,aten::as_strided,"[[8192],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,8
+0,aten::clamp,"[[1,128],[],[]]","[""int"",""Scalar"",""""]",shape_and_dtype,8
+0,aten::clamp_,"[[1,8192],[],[]]","[""int"",""Scalar"",""""]",shape_and_dtype,8
+0,aten::copy_,"[[1,512],[1,512],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,8
+0,aten::detach,[[1]],"[""int""]",shape_and_dtype,8
+0,aten::detach,[[2]],"[""int""]",shape_and_dtype,8
+0,aten::empty_like,"[[1,128],[],[],[],[],[]]","[""int"",""Scalar"","""","""",""Scalar"",""""]",shape_and_dtype,8
+0,aten::fill_,"[[0,512],[]]","[""int"",""Scalar""]",shape_and_dtype,8
+0,aten::fill_,"[[0],[]]","[""int"",""Scalar""]",shape_and_dtype,8
+0,aten::fill_,"[[8191],[]]","[""int"",""int""]",shape_and_dtype,8
+0,aten::fill_,"[[8192],[]]","[""int"",""Scalar""]",shape_and_dtype,8
+0,aten::fill_,"[[],[]]","[""int"",""Scalar""]",shape_and_dtype,8
+0,aten::floor_divide,"[[1],[]]","[""int"",""long int""]",shape_and_dtype,8
+0,aten::ge,"[[1],[]]","[""long int"",""Scalar""]",shape_and_dtype,8
+0,aten::is_pinned,"[[1],[]]","[""int"",""""]",shape_and_dtype,8
+0,aten::pin_memory,"[[1],[]]","[""int"",""""]",shape_and_dtype,8
+0,aten::reshape,"[[1],[]]","[""long int"",""ScalarList""]",shape_and_dtype,8
+0,aten::resolve_conj,[[1]],"[""int""]",shape_and_dtype,8
+0,aten::resolve_conj,[[2]],"[""int""]",shape_and_dtype,8
+0,aten::resolve_neg,[[1]],"[""int""]",shape_and_dtype,8
+0,aten::resolve_neg,[[2]],"[""int""]",shape_and_dtype,8
+0,aten::set_,"[[0],[],[],[],[]]","[""int"","""",""Scalar"",""ScalarList"",""ScalarList""]",shape_and_dtype,8
+0,aten::slice,"[[8192,1,128],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,8
+0,aten::slice,"[[8192,256],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,8
+0,aten::slice,"[[8192],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,8
+0,aten::to,"[[1],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",shape_and_dtype,8
+0,aten::to,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""""]",shape_and_dtype,8
+0,aten::to,"[[2],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",shape_and_dtype,8
+0,aten::unsqueeze,"[[1],[]]","[""int"",""Scalar""]",shape_and_dtype,8
+0,aten::as_strided,"[[1],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,6
+0,aten::slice,"[[1],[],[],[],[]]","[""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,6
+0,aten::_to_copy,"[[1,129280],[],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""","""",""Scalar"",""""]",shape_and_dtype,4
+0,aten::_to_copy,"[[1,1],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""""]",shape_and_dtype,4
+0,aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""long int"",""Scalar"","""","""","""",""Scalar"",""""]",shape_and_dtype,4
+0,aten::add,"[[1],[1],[],[1]]","[""int"",""int"",""Scalar"",""int""]",shape_and_dtype,4
+0,aten::add,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,4
+0,aten::add,"[[1],[1],[]]","[""long int"",""long int"",""Scalar""]",shape_and_dtype,4
+0,aten::alias,"[[1,128]]","[""int""]",shape_and_dtype,4
+0,aten::alias,"[[1,129280]]","[""c10::BFloat16""]",shape_and_dtype,4
+0,aten::argmax,"[[1,129280],[],[]]","[""float"",""Scalar"",""Scalar""]",shape_and_dtype,4
+0,aten::as_strided,"[[1,129280],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,4
+0,aten::as_strided,"[[1,1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""""]",shape_and_dtype,4
+0,aten::as_strided,"[[1,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",shape_and_dtype,4
+0,aten::as_strided,"[[1,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,4
+0,aten::as_strided,"[[8,1,16160],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",shape_and_dtype,4
+0,aten::clamp_,"[[1,4096],[],[]]","[""int"",""Scalar"",""""]",shape_and_dtype,4
+0,aten::copy_,"[[0],[],[]]","[""bool"",""bool"",""Scalar""]",shape_and_dtype,4
+0,aten::copy_,"[[1,128],[1,128],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,4
+0,aten::copy_,"[[1,129280],[1,129280],[]]","[""float"",""c10::BFloat16"",""Scalar""]",shape_and_dtype,4
+0,aten::copy_,"[[1,1],[1,1],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,4
+0,aten::copy_,"[[1,4096],[1,4096],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,4
+0,aten::copy_,"[[1,8192],[1,8192],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,4
+0,aten::copy_,"[[133,2],[133,2],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,4
+0,aten::copy_,"[[2],[2],[]]","[""int"",""int"",""Scalar""]",shape_and_dtype,4
+0,aten::diff,"[[2],[],[],[],[],[1]]","[""int"",""Scalar"",""Scalar"","""","""",""int""]",shape_and_dtype,4
+0,aten::diff,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""",""""]",shape_and_dtype,4
+0,aten::fill_,"[[0,128],[]]","[""int"",""Scalar""]",shape_and_dtype,4
+0,aten::fill_,"[[0,4096],[]]","[""int"",""Scalar""]",shape_and_dtype,4
+0,aten::fill_,"[[0,8192],[]]","[""int"",""Scalar""]",shape_and_dtype,4
+0,aten::fill_,"[[0],[]]","[""bool"",""bool""]",shape_and_dtype,4
+0,aten::fill_,"[[0],[]]","[""int"",""int""]",shape_and_dtype,4
+0,aten::fill_,"[[1],[]]","[""int"",""Scalar""]",shape_and_dtype,4
+0,aten::flatten,"[[1,32768],[],[]]","[""int"",""Scalar"",""Scalar""]",shape_and_dtype,4
+0,aten::index,"[[1,4096],[]]","[""c10::BFloat16"",""""]",shape_and_dtype,4
+0,aten::index,"[[1],[]]","[""int"",""""]",shape_and_dtype,4
+0,aten::index_select,"[[32768],[],[1],[1]]","[""int"",""Scalar"",""long int"",""int""]",shape_and_dtype,4
+0,aten::lift_fresh,[[1]],"[""long int""]",shape_and_dtype,4
+0,aten::lift_fresh,[[]],"[""bool""]",shape_and_dtype,4
+0,aten::linear,"[[1,4096],[16160,4096],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",shape_and_dtype,4
+0,aten::lt,"[[1],[1]]","[""int"",""int""]",shape_and_dtype,4
+0,aten::max,[[1]],"[""int""]",shape_and_dtype,4
+0,aten::min,[[1]],"[""int""]",shape_and_dtype,4
+0,aten::movedim,"[[8,1,16160],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",shape_and_dtype,4
+0,aten::movedim,"[[8,1,16160],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList""]",shape_and_dtype,4
+0,aten::permute,"[[8,1,16160],[]]","[""c10::BFloat16"",""ScalarList""]",shape_and_dtype,4
+0,aten::reshape,"[[1,8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",shape_and_dtype,4
+0,aten::reshape,"[[8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",shape_and_dtype,4
+0,aten::slice,"[[1,4096],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,4
+0,aten::squeeze,"[[1,1],[]]","[""long int"",""Scalar""]",shape_and_dtype,4
+0,aten::sub,"[[1],[1],[],[1]]","[""int"",""int"",""Scalar"",""int""]",shape_and_dtype,4
+0,aten::sub,"[[1],[],[]]","[""int"",""long int"",""Scalar""]",shape_and_dtype,4
+0,aten::to,"[[1,129280],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",shape_and_dtype,4
+0,aten::to,"[[1,1],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",shape_and_dtype,4
+0,aten::view,"[[1,16160],[]]","[""c10::BFloat16"",""ScalarList""]",shape_and_dtype,4
+0,aten::view,"[[1,256],[]]","[""int"",""ScalarList""]",shape_and_dtype,4
+0,aten::view,"[[1,32768],[]]","[""int"",""ScalarList""]",shape_and_dtype,4
+0,aten::view,"[[1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",shape_and_dtype,4
+0,aten::view,"[[1,8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",shape_and_dtype,4
+0,aten::view,"[[8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",shape_and_dtype,4
+0,c10d::_allgather_base_,"[[8,16160],[1,16160],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"","""",""Scalar"",""Scalar""]",shape_and_dtype,4
+0,record_param_comms,"[[1,16160],[],[],[],[],[],[],[],[],[]]","[""c10::BFloat16"","""","""",""Scalar"","""",""ScalarList"",""ScalarList"",""Scalar"",""Scalar"",""Scalar""]",shape_and_dtype,4
+0,vllm::all_gather,"[[1,16160],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""""]",shape_and_dtype,4
+0,aten::as_strided,"[[1,1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",shape_and_dtype,3
+0,aten::select,"[[1,1],[],[]]","[""int"",""Scalar"",""Scalar""]",shape_and_dtype,3

@@ -1,0 +1,363 @@
+operator,input_shapes,input_dtypes,call_count
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""",""Scalar"",""""]",5828
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""","""",""""]",4288
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""",""Scalar"",""""]",1976
+aten::view,"[[1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",1976
+aten::empty_strided,"[[],[],[],[],[],[]]","[""ScalarList"",""ScalarList"",""Scalar"",""Scalar"","""",""Scalar""]",1646
+aten::new_empty,"[[1,4096],[],[],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""Scalar"","""","""",""""]",1548
+aten::new_empty,"[[6,256],[],[],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""Scalar"","""","""",""""]",1548
+aten::_local_scalar_dense,[[]],"[""double""]",860
+aten::as_strided,"[[24576],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",860
+aten::item,[[]],"[""double""]",860
+aten::lift_fresh,[[]],"[""double""]",860
+aten::slice,"[[24576],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",860
+aten::to,"[[],[],[],[],[],[]]","[""double"","""",""Scalar"",""Scalar"",""Scalar"",""""]",860
+aten::view,"[[1,4,4096],[]]","[""c10::BFloat16"",""ScalarList""]",692
+aten::flatten,"[[24576],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",688
+aten::view,"[[24576],[]]","[""c10::BFloat16"",""ScalarList""]",688
+aten::as_strided,"[[805306368],[],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList"",""Scalar""]",598
+aten::slice,"[[805306368],[],[],[],[]]","[""unsigned char"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",598
+aten::to,"[[1,4096],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",524
+aten::empty_like,"[[1,4096],[],[],[],[],[]]","[""c10::BFloat16"","""","""","""",""Scalar"",""""]",520
+aten::new_empty,"[[1,1024],[],[],[],[],[]]","[""c10::BFloat16"",""ScalarList"","""","""","""",""Scalar""]",428
+aten::view,"[[1,1024],[]]","[""c10::BFloat16"",""ScalarList""]",428
+vllm::all_reduce,"[[1,4096],[]]","[""c10::BFloat16"",""""]",348
+aten::as_strided,"[[1,1,32],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""""]",344
+aten::as_strided,"[[1,1,4096],[],[],[]]","[""c10::Float8_e4m3fn"",""ScalarList"",""ScalarList"",""""]",344
+aten::as_strided,"[[1,1536],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",344
+aten::as_strided,"[[1,64,512],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",344
+aten::empty_like,"[[1,4,4096],[],[],[],[],[]]","[""c10::BFloat16"","""","""","""",""Scalar"",""""]",344
+aten::new_empty,"[[1,4096],[],[],[],[],[]]","[""c10::BFloat16"",""ScalarList"","""","""","""",""Scalar""]",344
+aten::new_empty,"[[1,6],[],[],[],[],[]]","[""int"",""ScalarList"",""Scalar"","""","""",""""]",344
+aten::reshape,"[[24576],[]]","[""c10::BFloat16"",""ScalarList""]",344
+aten::result_type,"[[1,6],[]]","[""float"",""Scalar""]",344
+aten::slice,"[[1,64,512],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",344
+aten::view,"[[1,16],[]]","[""float"",""ScalarList""]",344
+aten::view,"[[1,4],[]]","[""float"",""ScalarList""]",344
+aten::view,"[[49152],[]]","[""unsigned char"",""Scalar""]",344
+aten::view,"[[6,4096],[]]","[""c10::BFloat16"",""ScalarList""]",344
+vllm::dynamic_flashinfer_deepgemm_blockscale_gemm,"[[1,1024],[4096,1024],[32,8],[],[]]","[""c10::BFloat16"",""c10::Float8_e4m3fn"",""float"",""Scalar"",""Scalar""]",344
+aten::view,"[[1,4,1],[]]","[""float"",""ScalarList""]",340
+aten::view,"[[1,4,4],[]]","[""float"",""ScalarList""]",340
+aten::view,"[[24,16384],[]]","[""float"",""ScalarList""]",340
+_C_custom_ar::all_reduce,"[[],[1,4096],[1,4096],[],[]]","[""Scalar"",""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar""]",174
+_C::silu_and_mul_with_clamp,"[[6,256],[6,512],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar""]",172
+_moe_C::moe_align_block_size,"[[1,6],[],[],[48],[6],[1],[]]","[""int"",""Scalar"",""Scalar"",""int"",""int"",""int"",""""]",172
+_moe_C::moe_wna16_marlin_gemm,"[[1,4096],[6,512],[256,256,1024],[],[256,128,512],[],[],[],[],[],[528],[48],[6],[1],[1,6],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""int"","""",""c10::Float8_e8m0fnu"","""","""","""","""","""",""int"",""int"",""int"",""int"",""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",172
+_moe_C::moe_wna16_marlin_gemm,"[[6,256],[6,4096],[256,16,8192],[],[256,8,4096],[],[],[],[],[],[528],[48],[6],[1],[1,6],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""int"","""",""c10::Float8_e8m0fnu"","""","""","""","""","""",""int"",""int"",""int"",""int"",""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",172
+aten::add,"[[1,4096],[1,4096],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",172
+aten::as_strided,"[[1,1,1024],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",172
+aten::as_strided,"[[128],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""""]",172
+aten::as_strided,"[[256,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",172
+aten::copy_,"[[1,4096],[1,4096],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",172
+aten::empty_like,"[[1,1024],[],[],[],[],[]]","[""c10::BFloat16"","""","""","""",""Scalar"",""""]",172
+aten::empty_like,"[[1,4096],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""",""Scalar"",""""]",172
+aten::empty_like,"[[1,512],[],[],[],[],[]]","[""c10::BFloat16"","""","""","""",""Scalar"",""""]",172
+aten::flatten,"[[1,1,1024],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",172
+aten::flatten,"[[6,4096],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",172
+aten::mm,"[[1,4096],[4096,256],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",172
+aten::mul_,"[[1,6],[]]","[""float"",""double""]",172
+aten::new_empty,"[[1,256],[],[],[],[],[]]","[""c10::BFloat16"",""ScalarList"","""","""","""",""Scalar""]",172
+aten::new_empty,"[[1,6],[],[],[],[],[]]","[""float"",""ScalarList"","""","""","""",""Scalar""]",172
+aten::numpy_T,"[[256,4096]]","[""c10::BFloat16""]",172
+aten::permute,"[[1,1,1024],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::permute,"[[1,1,32],[]]","[""float"",""ScalarList""]",172
+aten::permute,"[[1,1,4096],[]]","[""c10::Float8_e4m3fn"",""ScalarList""]",172
+aten::permute,"[[256,4096],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::record_stream,"[[1,4096],[]]","[""c10::BFloat16"",""""]",172
+aten::reshape,"[[1,1,1024],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::reshape,"[[1,64,512],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::reshape,"[[6,4096],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::split_with_sizes,"[[1,1536],[],[]]","[""c10::BFloat16"",""ScalarList"",""Scalar""]",172
+aten::to,"[[1,1536],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",172
+aten::to,"[[1,512],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",172
+aten::transpose,"[[1,1,32],[],[]]","[""float"",""Scalar"",""Scalar""]",172
+aten::transpose,"[[1,1,4096],[],[]]","[""c10::Float8_e4m3fn"",""Scalar"",""Scalar""]",172
+aten::unsqueeze,"[[1,64,512],[]]","[""c10::BFloat16"",""Scalar""]",172
+aten::view,"[[1,1,1024],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[1,1536],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[1,256],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[1,512],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[1,64,512],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[1536],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[3072],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[4096],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::view,"[[6,512],[]]","[""c10::BFloat16"",""ScalarList""]",172
+aten::zeros,"[[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""",""Scalar""]",172
+triton_poi_fused_clamp_mul_sigmoid_slice_0,"[[1,512],[],[],[1,256],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""c10::BFloat16"",""Scalar"",""Scalar""]",172
+vllm::dynamic_flashinfer_deepgemm_blockscale_gemm,"[[1,256],[4096,256],[32,2],[],[]]","[""c10::BFloat16"",""c10::Float8_e4m3fn"",""float"",""Scalar"",""Scalar""]",172
+vllm::dynamic_flashinfer_deepgemm_blockscale_gemm,"[[1,4096],[1536,4096],[12,32],[],[]]","[""c10::BFloat16"",""c10::Float8_e4m3fn"",""float"",""Scalar"",""Scalar""]",172
+vllm::dynamic_flashinfer_deepgemm_blockscale_gemm,"[[1,4096],[512,4096],[4,32],[],[]]","[""c10::BFloat16"",""c10::Float8_e4m3fn"",""float"",""Scalar"",""Scalar""]",172
+vllm::fused_inv_rope_fp8_quant_kernel,"[[1,8,512],[1],[1048576,64],[],[],[],[],[],[],[],[],[],[],[],[]]","[""c10::BFloat16"",""long int"",""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",172
+vllm::moe_forward_shared,"[[1,4096],[1,4096],[1,4096],[1],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""c10::BFloat16"",""int"","""",""Scalar""]",172
+aten::as_strided,"[[1,2048],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",168
+aten::as_strided,"[[1,512],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",168
+aten::view,"[[1,8192],[]]","[""c10::BFloat16"",""ScalarList""]",168
+_moe_C::topk_softplus_sqrt,"[[1,6],[1,6],[1,6],[1,256],[],[],[256],[],[]]","[""float"",""int"",""int"",""float"",""Scalar"",""Scalar"",""float"","""",""""]",160
+aten::as_strided,"[[1,1024],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",160
+aten::as_strided,"[[8192,512],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",126
+aten::slice,"[[8192,512],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",126
+aten::view,"[[1,64,584],[]]","[""unsigned char"",""ScalarList""]",107
+aten::as_strided,"[[1,1,64],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""""]",86
+aten::new_empty,"[[1,8,512],[],[],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""Scalar"","""","""",""""]",86
+aten::pad,"[[1,8,512],[],[],[]]","[""c10::BFloat16"",""ScalarList"","""",""Scalar""]",86
+aten::transpose,"[[1,1,64],[],[]]","[""float"",""Scalar"",""Scalar""]",86
+aten::zero_,"[[1,64,512]]","[""c10::BFloat16""]",86
+aten::as_strided,"[[1],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""Scalar""]",84
+aten::as_strided,"[[2048,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",84
+aten::as_strided,"[[512,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",84
+aten::empty_like,"[[1,64,128],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""",""Scalar"",""""]",84
+aten::empty_like,"[[1,64],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""",""Scalar"",""""]",84
+aten::linear,"[[1,4096],[64,4096],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",84
+aten::mm,"[[1,4096],[4096,2048],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",84
+aten::mm,"[[1,4096],[4096,512],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",84
+aten::numpy_T,"[[2048,4096]]","[""c10::BFloat16""]",84
+aten::numpy_T,"[[512,4096]]","[""c10::BFloat16""]",84
+aten::permute,"[[2048,4096],[]]","[""c10::BFloat16"",""ScalarList""]",84
+aten::permute,"[[512,4096],[]]","[""c10::BFloat16"",""ScalarList""]",84
+aten::reshape,"[[1048576],[]]","[""unsigned char"",""ScalarList""]",84
+aten::slice,"[[1],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",84
+aten::split_with_sizes,"[[1,2048],[],[]]","[""float"",""ScalarList"",""Scalar""]",84
+aten::split_with_sizes,"[[1,512],[],[]]","[""float"",""ScalarList"",""Scalar""]",84
+aten::to,"[[1,8192],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",84
+aten::view,"[[1,64,128],[]]","[""c10::Float8_e4m3fn"",""Scalar""]",84
+aten::view,"[[1,64],[]]","[""c10::BFloat16"",""ScalarList""]",84
+aten::view,"[[1048576],[]]","[""unsigned char"",""Scalar""]",84
+aten::view,"[[1048576],[]]","[""unsigned char"",""ScalarList""]",84
+vllm::dynamic_flashinfer_deepgemm_blockscale_gemm,"[[1,1024],[8192,1024],[64,8],[],[]]","[""c10::BFloat16"",""c10::Float8_e4m3fn"",""float"",""Scalar"",""Scalar""]",84
+aten::as_strided,"[[1024,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",80
+aten::mm,"[[1,4096],[4096,1024],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",80
+aten::numpy_T,"[[1024,4096]]","[""c10::BFloat16""]",80
+aten::permute,"[[1024,4096],[]]","[""c10::BFloat16"",""ScalarList""]",80
+aten::split_with_sizes,"[[1,1024],[],[]]","[""float"",""ScalarList"",""Scalar""]",80
+aten::_reshape_alias,"[[50317,64,584],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList""]",64
+aten::as_strided,"[[50317,64,584],[],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList"",""Scalar""]",64
+aten::reshape,"[[1,64,584],[]]","[""unsigned char"",""ScalarList""]",64
+aten::reshape,"[[50317,64,584],[]]","[""unsigned char"",""ScalarList""]",64
+aten::unsqueeze,"[[1,64,584],[]]","[""unsigned char"",""Scalar""]",64
+aten::unsqueeze,"[[50317,64,584],[]]","[""unsigned char"",""Scalar""]",64
+aten::as_strided,"[[1,128],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",54
+aten::_local_scalar_dense,[[]],"[""int""]",52
+aten::item,[[]],"[""int""]",52
+aten::slice,"[[1,128],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",52
+aten::lift_fresh,[[]],"[""int""]",50
+_C::fused_deepseek_v4_qnorm_rope_kv_rope_quant_insert,"[[1,8,512],[1,512],[1,37376],[1],[1],[1048576,64],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""unsigned char"",""long int"",""long int"",""float"",""Scalar"",""Scalar"",""Scalar""]",43
+_C::fused_deepseek_v4_qnorm_rope_kv_rope_quant_insert,"[[1,8,512],[1,512],[50317,37376],[1],[1],[1048576,64],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""unsigned char"",""long int"",""long int"",""float"",""Scalar"",""Scalar"",""Scalar""]",43
+aten::view,"[[50317,64,584],[]]","[""unsigned char"",""ScalarList""]",43
+_C::cooperative_topk,"[[1,8192],[1,1],[1,512],[1048576],[],[]]","[""float"",""int"",""int"",""unsigned char"",""Scalar"",""Scalar""]",42
+aten::as_strided,"[[1,1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",42
+aten::as_strided,"[[1,64,128],[],[],[]]","[""c10::Float8_e4m3fn"",""ScalarList"",""ScalarList"",""Scalar""]",42
+aten::as_strided,"[[1,64],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",42
+aten::as_strided,"[[1,8192],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",42
+aten::as_strided,"[[8192],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",42
+aten::empty_like,"[[1,512],[],[],[],[],[]]","[""int"","""","""","""",""Scalar"",""""]",42
+aten::fill_,"[[1,512],[]]","[""int"",""int""]",42
+aten::reshape,"[[1,64,128],[]]","[""c10::Float8_e4m3fn"",""ScalarList""]",42
+aten::reshape,"[[1310720],[]]","[""unsigned char"",""ScalarList""]",42
+aten::reshape,"[[33816576],[]]","[""c10::BFloat16"",""ScalarList""]",42
+aten::reshape,"[[41943040],[]]","[""c10::Float8_e4m3fn"",""ScalarList""]",42
+aten::slice,"[[1,1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",42
+aten::slice,"[[1,64,128],[],[],[],[]]","[""c10::Float8_e4m3fn"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",42
+aten::slice,"[[1,64],[],[],[],[]]","[""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",42
+aten::slice,"[[1,8192],[],[],[],[]]","[""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",42
+aten::slice,"[[8192],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",42
+aten::view,"[[1,512],[]]","[""int"",""ScalarList""]",42
+aten::view,"[[1,64,128],[]]","[""c10::Float8_e4m3fn"",""ScalarList""]",42
+aten::view,"[[1310720],[]]","[""unsigned char"",""Scalar""]",42
+aten::view,"[[1310720],[]]","[""unsigned char"",""ScalarList""]",42
+aten::view,"[[33816576],[]]","[""c10::BFloat16"",""ScalarList""]",42
+aten::view,"[[41943040],[]]","[""c10::Float8_e4m3fn"",""ScalarList""]",42
+aten::view,"[[41943040],[]]","[""unsigned char"",""Scalar""]",42
+aten::view,"[[67633152],[]]","[""unsigned char"",""Scalar""]",42
+vllm::sparse_attn_indexer,"[[1,4096],[],[1,64,132],[1,64,128],[],[],[1,64],[],[],[],[],[],[],[8192,512],[],[]]","[""c10::BFloat16"","""",""unsigned char"",""c10::Float8_e4m3fn"","""","""",""float"",""Scalar"","""",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""int"",""Scalar"",""Scalar""]",42
+vllm::sparse_attn_indexer,"[[1,4096],[],[50317,64,132],[1,64,128],[],[],[1,64],[],[],[],[],[],[],[8192,512],[],[]]","[""c10::BFloat16"","""",""unsigned char"",""c10::Float8_e4m3fn"","""","""",""float"",""Scalar"","""",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""int"",""Scalar"",""Scalar""]",42
+aten::reshape,"[[17563648],[]]","[""c10::BFloat16"",""ScalarList""]",40
+aten::view,"[[17563648],[]]","[""c10::BFloat16"",""ScalarList""]",40
+aten::view,"[[35127296],[]]","[""unsigned char"",""Scalar""]",40
+aten::as_strided,"[[2],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",38
+aten::slice,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",34
+aten::as_strided,"[[1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",32
+aten::as_strided,"[[8192],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",32
+aten::slice,"[[8192],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",32
+aten::copy_,"[[1],[1],[]]","[""long int"",""long int"",""Scalar""]",24
+aten::fill_,"[[1],[]]","[""long int"",""Scalar""]",24
+aten::slice,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",22
+aten::_reshape_alias,"[[50317,64,132],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList""]",21
+aten::as_strided,"[[50317,64,132],[],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList"",""Scalar""]",21
+aten::reshape,"[[1,64,132],[]]","[""unsigned char"",""ScalarList""]",21
+aten::reshape,"[[50317,64,132],[]]","[""unsigned char"",""ScalarList""]",21
+aten::unsqueeze,"[[1,64,132],[]]","[""unsigned char"",""Scalar""]",21
+aten::unsqueeze,"[[50317,64,132],[]]","[""unsigned char"",""Scalar""]",21
+aten::view,"[[1,64,132],[]]","[""unsigned char"",""ScalarList""]",21
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[1,64,1,584],[1,1,128],[1],[64],[132,8],[2],[1,64,1,584],[1,1,512],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"",""int"",""int"",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",20
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[50317,64,1,584],[1,1,128],[1],[64],[132,8],[2],[50317,64,1,584],[1,1,512],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"",""int"",""int"",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",20
+aten::_reshape_alias,"[[50317,2,584],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList""]",20
+aten::as_strided,"[[50317,2,584],[],[],[]]","[""unsigned char"",""ScalarList"",""ScalarList"",""Scalar""]",20
+aten::copy_,"[[1],[1],[]]","[""int"",""long int"",""Scalar""]",20
+aten::fill_,"[[0],[]]","[""long int"",""Scalar""]",20
+aten::reshape,"[[1,2,584],[]]","[""unsigned char"",""ScalarList""]",20
+aten::reshape,"[[50317,2,584],[]]","[""unsigned char"",""ScalarList""]",20
+aten::unsqueeze,"[[1,2,584],[]]","[""unsigned char"",""Scalar""]",20
+aten::unsqueeze,"[[50317,2,584],[]]","[""unsigned char"",""Scalar""]",20
+aten::view,"[[1,2,584],[]]","[""unsigned char"",""ScalarList""]",20
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[1,64,1,584],[1,1,128],[1],[64],[132,8],[2],[1,2,1,584],[1,1,256],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"",""int"",""int"",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",19
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[50317,64,1,584],[1,1,128],[1],[64],[132,8],[2],[50317,2,1,584],[1,1,256],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"",""int"",""int"",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",19
+aten::as_strided,"[[1,512],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",16
+aten::slice,"[[1,512],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",16
+aten::view,"[[1],[]]","[""bool"",""ScalarList""]",14
+_moe_C::topk_softplus_sqrt,"[[1,6],[1,6],[1,6],[1,256],[],[],[],[],[]]","[""float"",""int"",""int"",""float"",""Scalar"",""Scalar"","""","""",""""]",12
+aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",12
+aten::copy_,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",12
+aten::reshape,"[[1],[]]","[""int"",""ScalarList""]",12
+aten::slice,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",12
+aten::sub,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",12
+aten::view,"[[1],[]]","[""int"",""ScalarList""]",12
+aten::_local_scalar_dense,[[]],"[""bool""]",10
+aten::_local_scalar_dense,[[]],"[""long int""]",10
+aten::_pin_memory,"[[1],[]]","[""long int"",""""]",10
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""int"",""Scalar"","""","""","""",""Scalar"",""""]",10
+aten::_to_copy,"[[],[],[],[],[],[],[]]","[""long int"",""Scalar"","""","""","""",""Scalar"",""""]",10
+aten::all,[[1]],"[""bool""]",10
+aten::arange,"[[],[],[],[0]]","[""Scalar"",""Scalar"",""Scalar"",""long int""]",10
+aten::arange,"[[],[],[],[],[]]","[""Scalar"","""","""","""",""Scalar""]",10
+aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""""]",10
+aten::as_strided,"[[1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""""]",10
+aten::copy_,"[[1],[1],[]]","[""long int"",""int"",""Scalar""]",10
+aten::copy_,"[[],[],[]]","[""bool"",""bool"",""Scalar""]",10
+aten::copy_,"[[],[],[]]","[""int"",""long int"",""Scalar""]",10
+aten::cumsum,"[[1],[],[]]","[""int"",""Scalar"",""""]",10
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""","""",""Scalar""]",10
+aten::empty_like,"[[1],[],[],[],[],[]]","[""int"",""Scalar"","""","""","""",""Scalar""]",10
+aten::expand,"[[1],[],[]]","[""int"",""ScalarList"",""Scalar""]",10
+aten::expand,"[[1],[],[]]","[""long int"",""ScalarList"",""Scalar""]",10
+aten::expand_as,"[[1],[1]]","[""long int"",""int""]",10
+aten::flatten,"[[1],[],[]]","[""long int"",""Scalar"",""Scalar""]",10
+aten::ge,"[[1],[]]","[""int"",""Scalar""]",10
+aten::index_select,"[[1],[],[1]]","[""long int"",""Scalar"",""int""]",10
+aten::is_pinned,"[[1],[]]","[""long int"",""""]",10
+aten::item,[[]],"[""bool""]",10
+aten::item,[[]],"[""long int""]",10
+aten::pin_memory,"[[1],[]]","[""long int"",""""]",10
+aten::repeat_interleave,"[[1],[1],[],[]]","[""long int"",""int"","""",""""]",10
+aten::repeat_interleave,"[[1],[]]","[""int"",""""]",10
+aten::resize_,"[[0],[],[]]","[""long int"",""ScalarList"",""""]",10
+aten::select,"[[1],[],[]]","[""long int"",""Scalar"",""Scalar""]",10
+aten::set_,"[[0],[],[],[],[]]","[""long int"","""",""Scalar"",""ScalarList"",""ScalarList""]",10
+aten::to,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""""]",10
+aten::to,"[[],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""""]",10
+aten::to,"[[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""""]",10
+aten::view_as,"[[1],[]]","[""bool"",""bool""]",10
+aten::as_strided,"[[1,4096],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",8
+aten::as_strided,"[[1,8192],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",8
+aten::empty_like,"[[1,1],[],[],[],[],[]]","[""float"",""Scalar"","""","""",""Scalar"",""""]",8
+aten::narrow,"[[2],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar""]",8
+aten::slice,"[[1,4096],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",8
+aten::slice,"[[1,8192],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",8
+aten::fill_,"[[8192],[]]","[""long int"",""Scalar""]",6
+_C::weak_ref_tensor,"[[1,4096]]","[""c10::BFloat16""]",4
+aten::_pin_memory,"[[1],[]]","[""int"",""""]",4
+aten::_to_copy,"[[1,4096],[],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""","""",""Scalar"",""""]",4
+aten::_to_copy,"[[1,4096],[],[],[],[],[],[]]","[""float"",""Scalar"","""","""","""",""Scalar"",""""]",4
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"","""","""",""Scalar"",""""]",4
+aten::add,"[[1,1],[],[]]","[""float"",""double"",""Scalar""]",4
+aten::as_strided,"[[1,1],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""""]",4
+aten::as_strided,"[[1,4,1],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""""]",4
+aten::as_strided,"[[1,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",4
+aten::as_strided,"[[8192,1,128],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",4
+aten::as_strided,"[[8192,16384],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",4
+aten::as_strided,"[[8192,256],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",4
+aten::as_strided,"[[8192],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""Scalar""]",4
+aten::clamp,"[[1,128],[],[]]","[""int"",""Scalar"",""""]",4
+aten::clamp_,"[[1,8192],[],[]]","[""int"",""Scalar"",""""]",4
+aten::copy_,"[[1,16384],[1,16384],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar""]",4
+aten::copy_,"[[1,4096],[1,4096],[]]","[""c10::BFloat16"",""float"",""Scalar""]",4
+aten::copy_,"[[1,4096],[1,4096],[]]","[""float"",""c10::BFloat16"",""Scalar""]",4
+aten::copy_,"[[1,512],[1,512],[]]","[""int"",""int"",""Scalar""]",4
+aten::copy_,"[[1],[1],[]]","[""bool"",""bool"",""Scalar""]",4
+aten::detach,[[2]],"[""int""]",4
+aten::embedding,"[[16160,4096],[1],[],[],[]]","[""c10::BFloat16"",""long int"",""Scalar"",""Scalar"",""Scalar""]",4
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""","""",""""]",4
+aten::empty_like,"[[1,128],[],[],[],[],[]]","[""int"",""Scalar"","""","""",""Scalar"",""""]",4
+aten::empty_like,"[[1,4096],[],[],[],[],[]]","[""float"",""Scalar"","""","""",""Scalar"",""""]",4
+aten::empty_like,"[[1],[],[],[],[],[]]","[""int"",""Scalar"","""","""",""Scalar"",""""]",4
+aten::empty_like,"[[1],[],[],[],[],[]]","[""long int"",""Scalar"","""","""",""Scalar"",""""]",4
+aten::expand,"[[1,1],[],[]]","[""bool"",""ScalarList"",""Scalar""]",4
+aten::fill_,"[[0,512],[]]","[""int"",""Scalar""]",4
+aten::fill_,"[[8191],[]]","[""int"",""int""]",4
+aten::fill_,"[[8192],[]]","[""int"",""Scalar""]",4
+aten::fill_,"[[],[]]","[""int"",""Scalar""]",4
+aten::flatten,"[[1,4,4096],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",4
+aten::floor_divide,"[[1],[]]","[""int"",""long int""]",4
+aten::ge,"[[1],[]]","[""long int"",""Scalar""]",4
+aten::index,"[[1,4096],[]]","[""c10::BFloat16"",""""]",4
+aten::is_pinned,"[[1],[]]","[""int"",""""]",4
+aten::lift_fresh,[[1]],"[""int""]",4
+aten::lift_fresh,[[1]],"[""long int""]",4
+aten::masked_fill_,"[[1,4096],[1,1],[]]","[""c10::BFloat16"",""bool"",""Scalar""]",4
+aten::mean,"[[1,4096],[],[],[]]","[""float"",""ScalarList"",""Scalar"",""""]",4
+aten::mul,"[[1,4096],[1,1]]","[""float"",""float""]",4
+aten::mul,"[[1,4096],[4096]]","[""c10::BFloat16"",""c10::BFloat16""]",4
+aten::pin_memory,"[[1],[]]","[""int"",""""]",4
+aten::pow,"[[1,4096],[]]","[""float"",""Scalar""]",4
+aten::repeat,"[[1,1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::reshape,"[[1,1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::reshape,"[[1,4,4096],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::reshape,"[[1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::reshape,"[[17039360],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::reshape,"[[1],[]]","[""bool"",""ScalarList""]",4
+aten::reshape,"[[1],[]]","[""long int"",""ScalarList""]",4
+aten::resolve_conj,[[2]],"[""int""]",4
+aten::resolve_neg,[[2]],"[""int""]",4
+aten::result_type,"[[1,4096],[1,1]]","[""float"",""float""]",4
+aten::result_type,"[[1,4096],[4096]]","[""c10::BFloat16"",""c10::BFloat16""]",4
+aten::rsqrt,"[[1,1]]","[""float""]",4
+aten::set_,"[[0],[],[],[],[]]","[""int"","""",""Scalar"",""ScalarList"",""ScalarList""]",4
+aten::slice,"[[8192,1,128],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4
+aten::slice,"[[8192,16384],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4
+aten::slice,"[[8192,256],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4
+aten::slice,"[[8192],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4
+aten::squeeze,"[[1,4,1],[]]","[""float"",""Scalar""]",4
+aten::to,"[[1,4096],[],[],[],[]]","[""float"",""Scalar"",""Scalar"",""Scalar"",""""]",4
+aten::to,"[[1],[],[],[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",4
+aten::to,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""""]",4
+aten::to,"[[2],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",4
+aten::unsqueeze,"[[1,4096],[]]","[""c10::BFloat16"",""Scalar""]",4
+aten::unsqueeze,"[[1],[]]","[""bool"",""Scalar""]",4
+aten::view,"[[1,1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::view,"[[17039360],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::view,"[[1],[]]","[""long int"",""ScalarList""]",4
+aten::view,"[[34078720],[]]","[""unsigned char"",""Scalar""]",4
+triton_poi_fused___and_____or___add_ge_lt_mul_sub_0,"[[1],[1],[],[],[],[],[],[]]","[""int"",""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4
+triton_poi_fused___and_____or___bitwise_not_ge_lt_1,"[[1],[1],[],[],[],[],[]]","[""int"",""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4
+vllm_ir::rms_norm,"[[1,4096],[4096],[],[]]","[""c10::BFloat16"",""c10::BFloat16"",""Scalar"",""""]",4
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[1,64,1,584],[1,1,128],[1],[64],[],[],[],[],[],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"","""","""","""","""","""",""Scalar"",""Scalar"",""c10::BFloat16""]",2
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[50317,64,1,584],[1,1,128],[1],[64],[],[],[],[],[],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"","""","""","""","""","""",""Scalar"",""Scalar"",""c10::BFloat16""]",2
+aten::alias,"[[1,128]]","[""int""]",2
+aten::clamp_,"[[1,4096],[],[]]","[""int"",""Scalar"",""""]",2
+aten::copy_,"[[0],[],[]]","[""bool"",""bool"",""Scalar""]",2
+aten::copy_,"[[1,128],[1,128],[]]","[""int"",""int"",""Scalar""]",2
+aten::copy_,"[[1,4096],[1,4096],[]]","[""int"",""int"",""Scalar""]",2
+aten::copy_,"[[1,8192],[1,8192],[]]","[""int"",""int"",""Scalar""]",2
+aten::copy_,"[[133,2],[133,2],[]]","[""int"",""int"",""Scalar""]",2
+aten::copy_,"[[1],[],[]]","[""int"",""int"",""Scalar""]",2
+aten::copy_,"[[2],[2],[]]","[""int"",""int"",""Scalar""]",2
+aten::diff,"[[2],[],[],[],[],[1]]","[""int"",""Scalar"",""Scalar"","""","""",""int""]",2
+aten::diff,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""",""""]",2
+aten::fill_,"[[0,128],[]]","[""int"",""Scalar""]",2
+aten::fill_,"[[0,4096],[]]","[""int"",""Scalar""]",2
+aten::fill_,"[[0,8192],[]]","[""int"",""Scalar""]",2
+aten::fill_,"[[0],[]]","[""bool"",""bool""]",2
+aten::fill_,"[[0],[]]","[""int"",""Scalar""]",2
+aten::fill_,"[[0],[]]","[""int"",""int""]",2
+aten::fill_,"[[1],[]]","[""int"",""int""]",2
+aten::lift_fresh,[[]],"[""bool""]",2
+aten::lt,"[[1],[1]]","[""int"",""int""]",2
+aten::max,[[1]],"[""int""]",2
+aten::min,[[1]],"[""int""]",2
+aten::sub,"[[1],[1],[],[1]]","[""int"",""int"",""Scalar"",""int""]",2
+aten::unsqueeze,"[[1],[]]","[""int"",""Scalar""]",2
+aten::view,"[[1,256],[]]","[""int"",""ScalarList""]",2
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[1,64,1,584],[1,1,128],[1],[64],[],[],[1,2,1,584],[1,1,256],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"","""","""",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",1
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[1,64,1,584],[1,1,128],[1],[64],[],[],[1,64,1,584],[1,1,512],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"","""","""",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",1
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[50317,64,1,584],[1,1,128],[1],[64],[],[],[50317,2,1,584],[1,1,256],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"","""","""",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",1
+_flashmla_C::sparse_decode_fwd,"[[1,1,64,512],[50317,64,1,584],[1,1,128],[1],[64],[],[],[50317,64,1,584],[1,1,512],[1],[],[],[1,1,64,512]]","[""c10::BFloat16"",""unsigned char"",""int"",""int"",""float"","""","""",""unsigned char"",""int"",""int"",""Scalar"",""Scalar"",""c10::BFloat16""]",1

@@ -1,0 +1,174 @@
+operator,input_shapes,input_dtypes,call_count
+aten::empty_strided,"[[],[],[],[],[],[]]","[""ScalarList"",""ScalarList"",""Scalar"",""Scalar"","""",""Scalar""]",96
+aten::as_strided,"[[8192],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",89
+aten::slice,"[[8192],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",89
+aten::as_strided,"[[2],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",88
+aten::slice,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",80
+aten::as_strided,"[[8192],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",72
+aten::slice,"[[8192],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",72
+aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",64
+aten::slice,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",64
+aten::copy_,"[[1],[1],[]]","[""long int"",""long int"",""Scalar""]",52
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""","""",""""]",52
+aten::as_strided,"[[1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""Scalar""]",44
+aten::copy_,"[[1],[1],[]]","[""int"",""long int"",""Scalar""]",44
+aten::copy_,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",36
+aten::as_strided,"[[1,512],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",32
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"","""","""",""Scalar"",""""]",32
+aten::slice,"[[1,512],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",32
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""int"",""Scalar"","""","""","""",""Scalar"",""""]",28
+aten::copy_,"[[1],[1],[]]","[""long int"",""int"",""Scalar""]",28
+aten::reshape,"[[1],[]]","[""int"",""ScalarList""]",28
+aten::to,"[[1],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""""]",28
+aten::view,"[[1],[]]","[""int"",""ScalarList""]",28
+aten::as_strided,"[[1,128],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",24
+aten::as_strided,"[[1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""""]",24
+aten::slice,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",24
+aten::sub,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",24
+aten::_local_scalar_dense,[[]],"[""bool""]",20
+aten::_local_scalar_dense,[[]],"[""int""]",20
+aten::_local_scalar_dense,[[]],"[""long int""]",20
+aten::_pin_memory,"[[1],[]]","[""long int"",""""]",20
+aten::_to_copy,"[[],[],[],[],[],[],[]]","[""long int"",""Scalar"","""","""","""",""Scalar"",""""]",20
+aten::all,[[1]],"[""bool""]",20
+aten::arange,"[[],[],[],[0]]","[""Scalar"",""Scalar"",""Scalar"",""long int""]",20
+aten::arange,"[[],[],[],[],[]]","[""Scalar"","""","""","""",""Scalar""]",20
+aten::as_strided,"[[1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""""]",20
+aten::copy_,"[[],[],[]]","[""bool"",""bool"",""Scalar""]",20
+aten::copy_,"[[],[],[]]","[""int"",""long int"",""Scalar""]",20
+aten::cumsum,"[[1],[],[]]","[""int"",""Scalar"",""""]",20
+aten::empty,"[[],[],[],[],[],[]]","[""ScalarList"",""Scalar"",""Scalar"","""","""",""Scalar""]",20
+aten::empty_like,"[[1],[],[],[],[],[]]","[""int"",""Scalar"","""","""","""",""Scalar""]",20
+aten::expand,"[[1],[],[]]","[""int"",""ScalarList"",""Scalar""]",20
+aten::expand,"[[1],[],[]]","[""long int"",""ScalarList"",""Scalar""]",20
+aten::expand_as,"[[1],[1]]","[""long int"",""int""]",20
+aten::fill_,"[[0],[]]","[""long int"",""Scalar""]",20
+aten::flatten,"[[1],[],[]]","[""long int"",""Scalar"",""Scalar""]",20
+aten::ge,"[[1],[]]","[""int"",""Scalar""]",20
+aten::index_select,"[[1],[],[1]]","[""long int"",""Scalar"",""int""]",20
+aten::is_pinned,"[[1],[]]","[""long int"",""""]",20
+aten::item,[[]],"[""bool""]",20
+aten::item,[[]],"[""int""]",20
+aten::item,[[]],"[""long int""]",20
+aten::pin_memory,"[[1],[]]","[""long int"",""""]",20
+aten::repeat_interleave,"[[1],[1],[],[]]","[""long int"",""int"","""",""""]",20
+aten::repeat_interleave,"[[1],[]]","[""int"",""""]",20
+aten::resize_,"[[0],[],[]]","[""long int"",""ScalarList"",""""]",20
+aten::select,"[[1],[],[]]","[""long int"",""Scalar"",""Scalar""]",20
+aten::set_,"[[0],[],[],[],[]]","[""long int"","""",""Scalar"",""ScalarList"",""ScalarList""]",20
+aten::slice,"[[1,128],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",20
+aten::to,"[[],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""""]",20
+aten::to,"[[],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""""]",20
+aten::view,"[[1],[]]","[""bool"",""ScalarList""]",20
+aten::view_as,"[[1],[]]","[""bool"",""bool""]",20
+aten::as_strided,"[[1,4096],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",16
+aten::as_strided,"[[1,8192],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",16
+aten::empty_like,"[[1],[],[],[],[],[]]","[""int"",""Scalar"","""","""",""Scalar"",""""]",16
+aten::narrow,"[[2],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar""]",16
+aten::slice,"[[1,4096],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",16
+aten::slice,"[[1,8192],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",16
+aten::as_strided,"[[1],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""Scalar""]",12
+aten::copy_,"[[1],[1],[]]","[""bool"",""bool"",""Scalar""]",12
+aten::empty_like,"[[1],[],[],[],[],[]]","[""long int"",""Scalar"","""","""",""Scalar"",""""]",12
+aten::fill_,"[[8192],[]]","[""long int"",""Scalar""]",12
+aten::lift_fresh,[[1]],"[""int""]",12
+aten::lift_fresh,[[]],"[""int""]",12
+aten::slice,"[[1],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",12
+aten::view,"[[1],[]]","[""long int"",""ScalarList""]",12
+aten::_pin_memory,"[[1],[]]","[""int"",""""]",8
+aten::as_strided,"[[8192,1,128],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",8
+aten::as_strided,"[[8192,256],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",8
+aten::as_strided,"[[8192],[],[],[]]","[""bool"",""ScalarList"",""ScalarList"",""Scalar""]",8
+aten::clamp,"[[1,128],[],[]]","[""int"",""Scalar"",""""]",8
+aten::clamp_,"[[1,8192],[],[]]","[""int"",""Scalar"",""""]",8
+aten::copy_,"[[1,512],[1,512],[]]","[""int"",""int"",""Scalar""]",8
+aten::detach,[[1]],"[""int""]",8
+aten::detach,[[2]],"[""int""]",8
+aten::empty_like,"[[1,128],[],[],[],[],[]]","[""int"",""Scalar"","""","""",""Scalar"",""""]",8
+aten::fill_,"[[0,512],[]]","[""int"",""Scalar""]",8
+aten::fill_,"[[0],[]]","[""int"",""Scalar""]",8
+aten::fill_,"[[8191],[]]","[""int"",""int""]",8
+aten::fill_,"[[8192],[]]","[""int"",""Scalar""]",8
+aten::fill_,"[[],[]]","[""int"",""Scalar""]",8
+aten::floor_divide,"[[1],[]]","[""int"",""long int""]",8
+aten::ge,"[[1],[]]","[""long int"",""Scalar""]",8
+aten::is_pinned,"[[1],[]]","[""int"",""""]",8
+aten::pin_memory,"[[1],[]]","[""int"",""""]",8
+aten::reshape,"[[1],[]]","[""long int"",""ScalarList""]",8
+aten::resolve_conj,[[1]],"[""int""]",8
+aten::resolve_conj,[[2]],"[""int""]",8
+aten::resolve_neg,[[1]],"[""int""]",8
+aten::resolve_neg,[[2]],"[""int""]",8
+aten::set_,"[[0],[],[],[],[]]","[""int"","""",""Scalar"",""ScalarList"",""ScalarList""]",8
+aten::slice,"[[8192,1,128],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",8
+aten::slice,"[[8192,256],[],[],[],[]]","[""int"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",8
+aten::slice,"[[8192],[],[],[],[]]","[""bool"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",8
+aten::to,"[[1],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",8
+aten::to,"[[1],[],[],[],[]]","[""long int"",""Scalar"",""Scalar"",""Scalar"",""""]",8
+aten::to,"[[2],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",8
+aten::unsqueeze,"[[1],[]]","[""int"",""Scalar""]",8
+aten::as_strided,"[[1],[],[],[]]","[""float"",""ScalarList"",""ScalarList"",""Scalar""]",6
+aten::slice,"[[1],[],[],[],[]]","[""float"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",6
+aten::_to_copy,"[[1,129280],[],[],[],[],[],[]]","[""c10::BFloat16"",""Scalar"","""","""","""",""Scalar"",""""]",4
+aten::_to_copy,"[[1,1],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""""]",4
+aten::_to_copy,"[[1],[],[],[],[],[],[]]","[""long int"",""Scalar"","""","""","""",""Scalar"",""""]",4
+aten::add,"[[1],[1],[],[1]]","[""int"",""int"",""Scalar"",""int""]",4
+aten::add,"[[1],[1],[]]","[""int"",""int"",""Scalar""]",4
+aten::add,"[[1],[1],[]]","[""long int"",""long int"",""Scalar""]",4
+aten::alias,"[[1,128]]","[""int""]",4
+aten::alias,"[[1,129280]]","[""c10::BFloat16""]",4
+aten::argmax,"[[1,129280],[],[]]","[""float"",""Scalar"",""Scalar""]",4
+aten::as_strided,"[[1,129280],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",4
+aten::as_strided,"[[1,1],[],[],[]]","[""long int"",""ScalarList"",""ScalarList"",""""]",4
+aten::as_strided,"[[1,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",4
+aten::as_strided,"[[1,4096],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""Scalar""]",4
+aten::as_strided,"[[8,1,16160],[],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList"",""""]",4
+aten::clamp_,"[[1,4096],[],[]]","[""int"",""Scalar"",""""]",4
+aten::copy_,"[[0],[],[]]","[""bool"",""bool"",""Scalar""]",4
+aten::copy_,"[[1,128],[1,128],[]]","[""int"",""int"",""Scalar""]",4
+aten::copy_,"[[1,129280],[1,129280],[]]","[""float"",""c10::BFloat16"",""Scalar""]",4
+aten::copy_,"[[1,1],[1,1],[]]","[""int"",""int"",""Scalar""]",4
+aten::copy_,"[[1,4096],[1,4096],[]]","[""int"",""int"",""Scalar""]",4
+aten::copy_,"[[1,8192],[1,8192],[]]","[""int"",""int"",""Scalar""]",4
+aten::copy_,"[[133,2],[133,2],[]]","[""int"",""int"",""Scalar""]",4
+aten::copy_,"[[2],[2],[]]","[""int"",""int"",""Scalar""]",4
+aten::diff,"[[2],[],[],[],[],[1]]","[""int"",""Scalar"",""Scalar"","""","""",""int""]",4
+aten::diff,"[[2],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""",""""]",4
+aten::fill_,"[[0,128],[]]","[""int"",""Scalar""]",4
+aten::fill_,"[[0,4096],[]]","[""int"",""Scalar""]",4
+aten::fill_,"[[0,8192],[]]","[""int"",""Scalar""]",4
+aten::fill_,"[[0],[]]","[""bool"",""bool""]",4
+aten::fill_,"[[0],[]]","[""int"",""int""]",4
+aten::fill_,"[[1],[]]","[""int"",""Scalar""]",4
+aten::flatten,"[[1,32768],[],[]]","[""int"",""Scalar"",""Scalar""]",4
+aten::index,"[[1,4096],[]]","[""c10::BFloat16"",""""]",4
+aten::index,"[[1],[]]","[""int"",""""]",4
+aten::index_select,"[[32768],[],[1],[1]]","[""int"",""Scalar"",""long int"",""int""]",4
+aten::lift_fresh,[[1]],"[""long int""]",4
+aten::lift_fresh,[[]],"[""bool""]",4
+aten::linear,"[[1,4096],[16160,4096],[]]","[""c10::BFloat16"",""c10::BFloat16"",""""]",4
+aten::lt,"[[1],[1]]","[""int"",""int""]",4
+aten::max,[[1]],"[""int""]",4
+aten::min,[[1]],"[""int""]",4
+aten::movedim,"[[8,1,16160],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar""]",4
+aten::movedim,"[[8,1,16160],[],[]]","[""c10::BFloat16"",""ScalarList"",""ScalarList""]",4
+aten::permute,"[[8,1,16160],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::reshape,"[[1,8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::reshape,"[[8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::slice,"[[1,4096],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""Scalar""]",4
+aten::squeeze,"[[1,1],[]]","[""long int"",""Scalar""]",4
+aten::sub,"[[1],[1],[],[1]]","[""int"",""int"",""Scalar"",""int""]",4
+aten::sub,"[[1],[],[]]","[""int"",""long int"",""Scalar""]",4
+aten::to,"[[1,129280],[],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""Scalar"",""""]",4
+aten::to,"[[1,1],[],[],[],[],[],[],[]]","[""int"",""Scalar"",""Scalar"","""","""",""Scalar"",""Scalar"",""""]",4
+aten::view,"[[1,16160],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::view,"[[1,256],[]]","[""int"",""ScalarList""]",4
+aten::view,"[[1,32768],[]]","[""int"",""ScalarList""]",4
+aten::view,"[[1,4096],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::view,"[[1,8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",4
+aten::view,"[[8,16160],[]]","[""c10::BFloat16"",""ScalarList""]",4
+c10d::_allgather_base_,"[[8,16160],[1,16160],[],[],[]]","[""c10::BFloat16"",""c10::BFloat16"","""",""Scalar"",""Scalar""]",4
+record_param_comms,"[[1,16160],[],[],[],[],[],[],[],[],[]]","[""c10::BFloat16"","""","""",""Scalar"","""",""ScalarList"",""ScalarList"",""Scalar"",""Scalar"",""Scalar""]",4
+vllm::all_gather,"[[1,16160],[],[],[]]","[""c10::BFloat16"",""Scalar"",""Scalar"",""""]",4
+aten::as_strided,"[[1,1],[],[],[]]","[""int"",""ScalarList"",""ScalarList"",""Scalar""]",3
+aten::select,"[[1,1],[],[]]","[""int"",""Scalar"",""Scalar""]",3
