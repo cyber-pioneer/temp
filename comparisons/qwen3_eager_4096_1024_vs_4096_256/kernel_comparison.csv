@@ -1,0 +1,115 @@
+kernel_name,presence,left_call_count,right_call_count,left_time_us,right_time_us,left_percent,right_percent,percent_point_delta
+_causal_conv1d_fwd_kernel,both,1020,990,64005.949,63865.549,0.306414,0.774884,0.468469
+_causal_conv1d_update_kernel,both,30690,7680,104565.013,25793.088,0.500582,0.312949,-0.187633
+_compute_slot_mapping_kernel,both,4228,1156,10657.967,3266.78,0.051023,0.039636,-0.011387
+_fused_post_conv_kernel,both,1020,990,46490.011,46066.069,0.222561,0.558922,0.336361
+_scatter_jit_function,both,17,17,23.743,22.913,0.000114,0.000278,0.000164
+_silu_and_mul_kernel_kernel_rank_2,both,160,200,210.921,267.009,0.00101,0.00324,0.00223
+add_func_kernel_rank_1,both,150094,41038,409646.066,269604.891,1.96109,3.271128,1.310038
+add_func_tensor_scalar_kernel_rank_1,both,245224,67048,267231.466,75935.687,1.279312,0.921331,-0.357981
+argmax_kernel_inner,both,1057,289,71710.545,19046.354,0.343298,0.23109,-0.112208
+bitwise_not_func_kernel_rank_1,both,1020,990,1267.354,1232.278,0.006067,0.014951,0.008884
+cat_copy_func_kernel_4,both,44260,13480,94598.992,54591.891,0.452872,0.662366,0.209494
+embedding_kernel,both,1057,289,2165.973,789.998,0.010369,0.009585,-0.000784
+exp_func_kernel_rank_1,both,1020,990,1709.827,1610.817,0.008185,0.019544,0.011359
+fill_scalar_kernel,both,2544,555,2327.38,513.728,0.011142,0.006233,-0.004909
+full_func_scalar_kernel_rank_1,both,204,198,198.277,191.686,0.000949,0.002326,0.001377
+fused_moe_kernel,both,84560,23120,6056174.999,1987823.191,28.992602,24.118347,-4.874255
+fused_recurrent_gated_delta_rule_packed_decode_kernel,both,30690,7680,1373882.595,327886.877,6.57716,3.978266,-2.598894
+fused_sigmoid_gating_delta_rule_update_kernel,both,990,960,27123.276,26177.334,0.129847,0.317611,0.187764
+gt_func_scalar_kernel_rank_1,both,102,99,118.595,120.611,0.000568,0.001463,0.000896
+kernel_unified_attention,both,10570,2890,1735419.728,840150.349,8.307939,10.193581,1.885642
+masked_fill_kernel_kernel_rank_2,both,1057,289,2411.071,1222.862,0.011542,0.014837,0.003295
+masked_fill_kernel_kernel_rank_4,both,1020,990,3142.473,3084.462,0.015044,0.037424,0.02238
+mean_dim_kernel_inner,both,138467,37859,373761.793,219440.007,1.789302,2.662475,0.873173
+moe_align_block_size_stage1,both,42120,11360,91855.64,26218.882,0.439739,0.318115,-0.121624
+moe_align_block_size_stage2_vec,both,42120,11360,126300.166,35395.008,0.604634,0.429449,-0.175185
+moe_align_block_size_stage3,both,42120,11360,56695.186,15948.734,0.271416,0.193507,-0.077909
+moe_align_block_size_stage4,both,42120,11360,109342.483,31540.445,0.523453,0.382682,-0.140771
+moe_sum_kernel,both,40960,10240,100546.481,24706.702,0.481344,0.299768,-0.181577
+mul_broadcast_2d_kernel,both,331338,75718,825453.68,433146.492,3.951677,5.255386,1.303708
+mul_generic_nd_kernel,both,188192,34640,266487.406,74376.483,1.27575,0.902413,-0.373336
+mul_kernel,both,42320,11600,134985.819,90714.173,0.646215,1.100639,0.454424
+ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<4096ul>),both,1057,289,88637.958,22307.857,0.424335,0.270662,-0.153672
+nvjet_tst_128x128_64x6_2x1_v_bz_TNT,both,1320,1280,22245.413,21481.908,0.106495,0.260641,0.154146
+nvjet_tst_128x160_64x5_2x1_v_bz_TNT,right_only,0,40,0.0,667.659,0.0,0.008101,0.008101
+nvjet_tst_128x208_64x5_4x2_h_bz_coopA_TNT,left_only,40,0,246.407,0.0,0.00118,0.0,-0.00118
+nvjet_tst_128x64_64x8_1x2_h_bz_TNT,both,40,40,459.907,457.575,0.002202,0.005552,0.00335
+nvjet_tst_128x80_64x8_1x2_h_bz_TNT,right_only,0,40,0.0,517.579,0.0,0.00628,0.00628
+nvjet_tst_16x64_64x16_2x1_v_bz_TNN,both,60,30,491.4,218.052,0.002352,0.002646,0.000293
+nvjet_tst_192x192_64x4_1x2_h_bz_coopB_TNN,both,320,310,65208.531,64081.923,0.312171,0.777509,0.465337
+nvjet_tst_192x192_64x4_2x1_v_bz_coopB_TNN,both,940,950,261362.478,262583.377,1.251215,3.185936,1.934721
+nvjet_tst_24x64_64x16_4x1_v_bz_TNN,both,720,720,3602.958,3598.582,0.017248,0.043662,0.026413
+nvjet_tst_256x128_64x4_1x2_h_bz_coopA_TNT,both,3830,3830,179120.766,178941.827,0.857501,2.171109,1.313608
+nvjet_tst_256x128_64x4_2x1_v_bz_coopA_TNT,left_only,80,0,2317.928,0.0,0.011097,0.0,-0.011097
+nvjet_tst_256x152_64x4_2x1_v_bz_coopA_TNT,left_only,40,0,4469.529,0.0,0.021397,0.0,-0.021397
+nvjet_tst_256x160_64x4_1x2_h_bz_coopA_TNT,right_only,0,110,0.0,7991.589,0.0,0.096962,0.096962
+nvjet_tst_256x16_64x6_2x1_v_bz_TNT,both,8,8,1402.207,1403.261,0.006713,0.017026,0.010313
+nvjet_tst_256x24_64x6_2x1_v_bz_TNT,both,8,8,1422.014,1422.204,0.006808,0.017256,0.010448
+nvjet_tst_256x32_64x5_2x1_v_bz_TNT,both,8,8,1433.054,1430.59,0.00686,0.017357,0.010497
+nvjet_tst_256x40_64x5_2x1_v_bz_TNT,both,8,8,1447.037,1441.628,0.006927,0.017491,0.010564
+nvjet_tst_256x48_64x5_2x1_v_bz_TNT,both,8,8,1453.436,1450.462,0.006958,0.017599,0.010641
+nvjet_tst_256x56_64x5_2x1_v_bz_TNT,both,8,8,1465.119,1462.558,0.007014,0.017745,0.010731
+nvjet_tst_256x72_64x5_1x2_h_bz_TNT,left_only,40,0,714.188,0.0,0.003419,0.0,-0.003419
+nvjet_tst_256x8_64x6_2x1_v_bz_TNT,both,9,9,1547.681,1540.928,0.007409,0.018696,0.011287
+nvjet_tst_256x96_64x4_2x1_v_bz_coopA_TNT,left_only,30,0,1356.634,0.0,0.006495,0.0,-0.006495
+nvjet_tst_320x64_64x4_2x1_v_bz_TNT,both,1000,232,188502.027,43302.58,0.902412,0.525392,-0.37702
+nvjet_tst_32x64_64x16_1x2_h_bz_TNN,both,930,930,15095.722,15076.67,0.072267,0.182926,0.110658
+nvjet_tst_32x64_64x16_1x4_h_bz_TNN,right_only,0,30,0.0,245.381,0.0,0.002977,0.002977
+nvjet_tst_48x64_64x15_2x1_v_bz_TNN,both,150,150,1772.737,1776.26,0.008487,0.021551,0.013065
+nvjet_tst_64x128_64x8_2x1_v_bz_TNN,left_only,40,0,432.358,0.0,0.00207,0.0,-0.00207
+nvjet_tst_64x16_64x16_4x1_v_bz_TNT,both,160,160,1767.715,1754.054,0.008463,0.021282,0.012819
+nvjet_tst_64x16_64x16_4x2_h_bz_TNT,both,320,320,1562.176,1561.475,0.007479,0.018945,0.011467
+nvjet_tst_64x24_64x16_4x1_v_bz_TNT,both,160,200,1773.003,2038.021,0.008488,0.024727,0.01624
+nvjet_tst_64x24_64x16_4x2_h_bz_TNT,both,640,640,3188.843,3174.523,0.015266,0.038517,0.023251
+nvjet_tst_64x32_64x16_4x1_v_bz_TNT,both,160,160,1790.285,1792.77,0.008571,0.021752,0.013181
+nvjet_tst_64x32_64x16_4x2_h_bz_TNT,both,79200,17760,391961.371,88079.623,1.876429,1.068674,-0.807755
+nvjet_tst_64x40_64x16_4x1_v_bz_TNT,both,160,160,1837.35,1820.49,0.008796,0.022088,0.013292
+nvjet_tst_64x48_64x15_2x4_h_bz_TNT,left_only,40,0,270.856,0.0,0.001297,0.0,-0.001297
+nvjet_tst_64x48_64x15_4x1_v_bz_TNT,both,160,160,1837.747,1807.487,0.008798,0.02193,0.013133
+nvjet_tst_64x56_64x14_4x1_v_bz_TNT,both,160,160,1828.357,1796.869,0.008753,0.021801,0.013049
+nvjet_tst_64x64_64x13_4x1_v_bz_TNT,both,9950,2270,92928.631,21054.159,0.444875,0.255451,-0.189424
+nvjet_tst_64x8_64x16_1x1_h_bz_TNT,both,39720,9310,194535.811,46586.267,0.931297,0.565233,-0.366064
+nvjet_tst_64x8_64x16_1x2_h_bz_TNT,both,120,120,600.464,601.994,0.002875,0.007304,0.004429
+nvjet_tst_64x8_64x16_1x4_h_bz_TNT,both,750,660,3982.006,3492.479,0.019063,0.042374,0.023311
+nvjet_tst_64x8_64x16_2x1_v_bz_TNT,both,1240,1240,22619.913,22591.299,0.108288,0.274101,0.165813
+nvjet_tst_64x8_64x16_2x4_h_bz_TNT,both,81200,19760,445311.849,108712.116,2.131832,1.319009,-0.812823
+nvjet_tst_64x8_64x16_4x1_v_bz_TNT,both,840,960,5191.248,5890.873,0.024852,0.071474,0.046622
+nvjet_tst_64x8_64x16_4x2_h_bz_TNT,both,480,520,2358.093,2555.46,0.011289,0.031006,0.019717
+nvjet_tst_64x96_64x10_4x2_h_bz_TNT,left_only,40,0,299.106,0.0,0.001432,0.0,-0.001432
+nvjet_tst_72x64_64x12_4x1_v_bz_TNN,both,29700,6660,353455.249,79207.229,1.692089,0.961025,-0.731064
+nvjet_tst_8x64_64x16_4x1_v_bz_TNN,both,30180,7230,158406.963,37989.823,0.758338,0.460932,-0.297406
+nvjet_tst_8x64_64x16_4x2_h_bz_TNN,left_only,30,0,197.191,0.0,0.000944,0.0,-0.000944
+pow_func_tensor_scalar_kernel_rank_1,both,138467,37859,506586.584,305900.597,2.425172,3.711506,1.286334
+reduce_segments,both,10230,2560,57111.489,14008.726,0.273409,0.169968,-0.10344
+reshape_and_cache_kernel_flash,both,10570,2890,24193.141,11369.216,0.115819,0.137943,0.022124
+rsqrt_func_kernel_rank_1,both,138467,37859,149996.777,41580.798,0.718076,0.504502,-0.213575
+sigmoid_forward_kernel_rank_1,both,52850,14450,70255.153,24440.417,0.336331,0.296537,-0.039794
+silu_and_mul_kernel_kernel_rank_1,both,40,40,43.683,43.745,0.000209,0.000531,0.000322
+silu_and_mul_kernel_kernel_rank_2,both,42240,11520,71965.649,19321.089,0.34452,0.234424,-0.110096
+silu_forward_kernel_rank_1,both,31710,8670,86144.392,54370.589,0.412397,0.659681,0.247283
+"std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, false, true, true, false, 7, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>)",left_only,40,0,152.739,0.0,0.000731,0.0,-0.000731
+sub_func_kernel_rank_1,both,27482,7514,31961.281,9334.906,0.153008,0.113261,-0.039747
+sub_func_tensor_scalar_kernel_rank_1,both,1156,385,1179.264,390.061,0.005645,0.004733,-0.000913
+topk_gating_softmax_kernel,both,42280,11560,160145.221,55842.564,0.76666,0.67754,-0.08912
+triton_poi_fused___and_____or___add_bitwise_not_ge_lt_mul_sub_0,both,1056,288,1307.383,366.512,0.006259,0.004447,-0.001812
+triton_poi_fused___and_____or___add_ge_lt_mul_sub_0,both,1,1,1.185,1.216,6e-06,1.5e-05,9e-06
+triton_poi_fused___and_____or___bitwise_not_ge_lt_1,both,1,1,1.056,1.056,5e-06,1.3e-05,8e-06
+"void (anonymous namespace)::two_shot_all_reduce_kernel_inplace<c10::BFloat16, 16, 2>(c10::BFloat16**, unsigned long, unsigned long, unsigned int**, unsigned long, unsigned long)",both,2673,2673,325831.507,294213.831,1.559846,3.569709,2.009863
+"void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1} const&)::{lambda(int)#1})",both,1057,289,1550.039,442.054,0.00742,0.005363,-0.002057
+"void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1} const&)::{lambda(int)#1})",both,10560,2880,38073.944,11760.208,0.182271,0.142687,-0.039583
+"void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1})",both,204645,57867,603077.345,228728.736,2.8871,2.775176,-0.111924
+"void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",both,10572,2892,46394.689,14502.601,0.222104,0.175961,-0.046144
+"void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",both,1164,336,2390.474,762.637,0.011444,0.009253,-0.002191
+"void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",both,1020,990,5380.153,5210.754,0.025756,0.063222,0.037466
+"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",both,1159,388,1642.476,569.454,0.007863,0.006909,-0.000954
+"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",both,5174,3548,7960.099,5412.942,0.038107,0.065675,0.027568
+"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",both,383701,104917,1609599.729,714382.186,7.705604,8.667631,0.962027
+"void at::native::vectorized_elementwise_kernel<8, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul>)",both,223027,60979,516969.196,298026.141,2.474876,3.615964,1.141088
+"void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",both,1985,1247,5896.997,4764.768,0.028231,0.057811,0.029581
+"void cutlass::device_kernel<flat::kernel::FlatKernelTmaWarpSpecializedDeltaRule<flat::collective::FlatMainloopTmaWarpSpecializedDeltaRule<cutlass::bfloat16_t, float, float, cute::tuple<cute::C<64>, cute::C<64>, cute::C<128> >, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > >, flat::kernel::IndividualTileScheduler<flat::kernel::GVATag>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > > >(flat::kernel::FlatKernelTmaWarpSpecializedDeltaRule<flat::collective::FlatMainloopTmaWarpSpecializedDeltaRule<cutlass::bfloat16_t, float, float, cute::tuple<cute::C<64>, cute::C<64>, cute::C<128> >, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > >, flat::kernel::IndividualTileScheduler<flat::kernel::GVATag>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > >::Params)",both,1020,990,198281.549,196049.247,0.949229,2.378674,1.429445
+"void dot_kernel<float, 128, 0, cublasDotParams<cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<float> > >(cublasDotParams<cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<float> >)",both,1320,1080,3118.841,2511.283,0.014931,0.03047,0.015539
+"void gemv2T_kernel_val<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 128, 16, 4, 4, false, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>, float, float)",both,40,40,527.499,629.262,0.002525,0.007635,0.00511
+"void reduce_1Block_kernel<float, 128, 7, cublasGemvTensorStridedBatched<float>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16> >(float const*, float, cublasGemvTensorStridedBatched<float>, int, float const*, float, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, cublasPointerMode_t, cublasLtEpilogue_t, cublasGemvTensorStridedBatched<biasType<cublasGemvTensorStridedBatched<__nv_bfloat16>::value_type, float>::type const>)",both,1320,1080,2163.92,1735.376,0.010359,0.021055,0.010696
+"void vllm::cross_device_reduce_1stage<__nv_bfloat16, 2>(vllm::RankData*, vllm::RankSignals, vllm::Signal*, __nv_bfloat16*, int, int)",both,82944,20736,1325821.352,104118.995,6.347077,1.26328,-5.083797
+zeros_kernel,both,117270,32710,138543.652,54503.722,0.663247,0.661296,-0.001951
