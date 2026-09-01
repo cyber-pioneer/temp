@@ -1,0 +1,106 @@
+operator_id,operator_name,kernel_name
+1,SiluAndMul,silu_and_mul_kernel_kernel_rank_2
+1,SiluAndMul,silu_and_mul_kernel_kernel_rank_1
+2,_C_custom_ar::all_reduce,"void vllm::cross_device_reduce_1stage<__nv_bfloat16, 2>(vllm::RankData*, vllm::RankSignals, vllm::Signal*, __nv_bfloat16*, int, int)"
+3,aten::_index_put_impl_,"void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<4> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})"
+4,aten::add,add_func_kernel_rank_1
+4,aten::add,add_func_tensor_scalar_kernel_rank_1
+5,aten::argmax,argmax_kernel_inner
+6,aten::bitwise_not,bitwise_not_func_kernel_rank_1
+7,aten::cat,cat_copy_func_kernel_4
+8,aten::copy_,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)"
+8,aten::copy_,"void at::native::vectorized_elementwise_kernel<8, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul>)"
+8,aten::copy_,"void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1})"
+8,aten::copy_,"void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1} const&)::{lambda(int)#1})"
+8,aten::copy_,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)"
+8,aten::copy_,"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#3}::operator()() const::{lambda(int)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)"
+8,aten::copy_,"void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1} const&)::{lambda(int)#1})"
+9,aten::embedding,embedding_kernel
+10,aten::exp,exp_func_kernel_rank_1
+11,aten::fill_,fill_scalar_kernel
+12,aten::full,full_func_scalar_kernel_rank_1
+13,aten::gt,gt_func_scalar_kernel_rank_1
+14,aten::index,"void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<2> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})"
+14,aten::index,"void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)"
+14,aten::index,"void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})"
+15,aten::masked_fill_,masked_fill_kernel_kernel_rank_4
+15,aten::masked_fill_,masked_fill_kernel_kernel_rank_2
+16,aten::mean,mean_dim_kernel_inner
+17,aten::mm,nvjet_tst_192x192_64x4_2x1_v_bz_coopB_TNN
+17,aten::mm,nvjet_tst_256x128_64x4_1x2_h_bz_coopA_TNT
+17,aten::mm,nvjet_tst_64x8_64x16_2x4_h_bz_TNT
+17,aten::mm,nvjet_tst_64x32_64x16_4x2_h_bz_TNT
+17,aten::mm,nvjet_tst_72x64_64x12_4x1_v_bz_TNN
+17,aten::mm,nvjet_tst_192x192_64x4_1x2_h_bz_coopB_TNN
+17,aten::mm,nvjet_tst_64x8_64x16_1x1_h_bz_TNT
+17,aten::mm,nvjet_tst_320x64_64x4_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_8x64_64x16_4x1_v_bz_TNN
+17,aten::mm,nvjet_tst_64x8_64x16_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_128x128_64x6_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_64x64_64x13_4x1_v_bz_TNT
+17,aten::mm,nvjet_tst_32x64_64x16_1x2_h_bz_TNN
+17,aten::mm,nvjet_tst_256x160_64x4_1x2_h_bz_coopA_TNT
+17,aten::mm,nvjet_tst_64x8_64x16_4x1_v_bz_TNT
+17,aten::mm,nvjet_tst_24x64_64x16_4x1_v_bz_TNN
+17,aten::mm,nvjet_tst_64x8_64x16_1x4_h_bz_TNT
+17,aten::mm,nvjet_tst_64x24_64x16_4x2_h_bz_TNT
+17,aten::mm,nvjet_tst_64x8_64x16_4x2_h_bz_TNT
+17,aten::mm,"void dot_kernel<float, 128, 0, cublasDotParams<cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<float> > >(cublasDotParams<cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<float> >)"
+17,aten::mm,nvjet_tst_64x24_64x16_4x1_v_bz_TNT
+17,aten::mm,nvjet_tst_64x40_64x16_4x1_v_bz_TNT
+17,aten::mm,nvjet_tst_64x48_64x15_4x1_v_bz_TNT
+17,aten::mm,nvjet_tst_64x56_64x14_4x1_v_bz_TNT
+17,aten::mm,nvjet_tst_64x32_64x16_4x1_v_bz_TNT
+17,aten::mm,nvjet_tst_48x64_64x15_2x1_v_bz_TNN
+17,aten::mm,nvjet_tst_64x16_64x16_4x1_v_bz_TNT
+17,aten::mm,"void reduce_1Block_kernel<float, 128, 7, cublasGemvTensorStridedBatched<float>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16> >(float const*, float, cublasGemvTensorStridedBatched<float>, int, float const*, float, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, cublasPointerMode_t, cublasLtEpilogue_t, cublasGemvTensorStridedBatched<biasType<cublasGemvTensorStridedBatched<__nv_bfloat16>::value_type, float>::type const>)"
+17,aten::mm,nvjet_tst_64x16_64x16_4x2_h_bz_TNT
+17,aten::mm,nvjet_tst_256x8_64x6_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_256x56_64x5_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_256x48_64x5_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_256x40_64x5_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_256x32_64x5_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_256x24_64x6_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_256x16_64x6_2x1_v_bz_TNT
+17,aten::mm,nvjet_tst_128x160_64x5_2x1_v_bz_TNT
+17,aten::mm,"void gemv2T_kernel_val<int, int, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, float, 128, 16, 4, 4, false, false, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float> >(cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16 const>, cublasGemvTensorStridedBatched<__nv_bfloat16>, float>, float, float)"
+17,aten::mm,nvjet_tst_64x8_64x16_1x2_h_bz_TNT
+17,aten::mm,nvjet_tst_128x80_64x8_1x2_h_bz_TNT
+17,aten::mm,nvjet_tst_128x64_64x8_1x2_h_bz_TNT
+17,aten::mm,nvjet_tst_32x64_64x16_1x4_h_bz_TNN
+17,aten::mm,nvjet_tst_16x64_64x16_2x1_v_bz_TNN
+18,aten::mul,mul_broadcast_2d_kernel
+18,aten::mul,mul_kernel
+18,aten::mul,mul_generic_nd_kernel
+19,aten::pow,pow_func_tensor_scalar_kernel_rank_1
+20,aten::rsqrt,rsqrt_func_kernel_rank_1
+21,aten::scatter_,_scatter_jit_function
+22,aten::sigmoid,sigmoid_forward_kernel_rank_1
+23,aten::silu,silu_forward_kernel_rank_1
+24,aten::sub,sub_func_kernel_rank_1
+24,aten::sub,sub_func_tensor_scalar_kernel_rank_1
+25,aten::zero_,zeros_kernel
+26,aten::zeros,zeros_kernel
+27,record_param_comms,ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsStorage<4096ul>)
+28,symm_mem::two_shot_all_reduce_,"void (anonymous namespace)::two_shot_all_reduce_kernel_inplace<c10::BFloat16, 16, 2>(c10::BFloat16**, unsigned long, unsigned long, unsigned int**, unsigned long, unsigned long)"
+29,triton_poi_fused___and_____or___add_bitwise_not_ge_lt_mul_sub_0,triton_poi_fused___and_____or___add_bitwise_not_ge_lt_mul_sub_0
+30,triton_poi_fused___and_____or___add_ge_lt_mul_sub_0,triton_poi_fused___and_____or___add_ge_lt_mul_sub_0
+31,triton_poi_fused___and_____or___bitwise_not_ge_lt_1,triton_poi_fused___and_____or___bitwise_not_ge_lt_1
+32,vllm::moe_forward_shared,fused_moe_kernel
+32,vllm::moe_forward_shared,topk_gating_softmax_kernel
+32,vllm::moe_forward_shared,moe_align_block_size_stage2_vec
+32,vllm::moe_forward_shared,moe_align_block_size_stage4
+32,vllm::moe_forward_shared,moe_align_block_size_stage1
+32,vllm::moe_forward_shared,moe_sum_kernel
+32,vllm::moe_forward_shared,moe_align_block_size_stage3
+32,vllm::moe_forward_shared,_silu_and_mul_kernel_kernel_rank_2
+33,vllm::qwen_gdn_attention_core,fused_recurrent_gated_delta_rule_packed_decode_kernel
+33,vllm::qwen_gdn_attention_core,"void cutlass::device_kernel<flat::kernel::FlatKernelTmaWarpSpecializedDeltaRule<flat::collective::FlatMainloopTmaWarpSpecializedDeltaRule<cutlass::bfloat16_t, float, float, cute::tuple<cute::C<64>, cute::C<64>, cute::C<128> >, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > >, flat::kernel::IndividualTileScheduler<flat::kernel::GVATag>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > > >(flat::kernel::FlatKernelTmaWarpSpecializedDeltaRule<flat::collective::FlatMainloopTmaWarpSpecializedDeltaRule<cutlass::bfloat16_t, float, float, cute::tuple<cute::C<64>, cute::C<64>, cute::C<128> >, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, cute::tuple<long, cute::C<1>, int>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > >, flat::kernel::IndividualTileScheduler<flat::kernel::GVATag>, std::tuple<flat::kernel::Option<(flat::kernel::Tag)1, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)11, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)10, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)9, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)12, cute::C<true> >, flat::kernel::Option<(flat::kernel::Tag)13, cute::C<false> > > >::Params)"
+33,vllm::qwen_gdn_attention_core,_causal_conv1d_fwd_kernel
+33,vllm::qwen_gdn_attention_core,_fused_post_conv_kernel
+33,vllm::qwen_gdn_attention_core,fused_sigmoid_gating_delta_rule_update_kernel
+33,vllm::qwen_gdn_attention_core,_causal_conv1d_update_kernel
+34,vllm::unified_attention_with_output,kernel_unified_attention
+34,vllm::unified_attention_with_output,reduce_segments
+35,vllm::unified_kv_cache_update,reshape_and_cache_kernel_flash
+null,null,_compute_slot_mapping_kernel
