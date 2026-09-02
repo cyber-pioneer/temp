@@ -15,12 +15,12 @@ did contain the activation message.
 
 ## Scenario summary
 
-| Scenario | Runtime | Batch wall time (s) | Kernel events | Kernel types | Kernel duration (us) | CPU op types | Attributed op types | Shape/dtype variants | Op-kernel relations | Mapping event coverage | Mapping time coverage | Rank-0 trace (MB) |
+| Scenario | Runtime | Batch wall time (s) | Kernel events | Kernel types | Kernel duration (us) | CPU op types | Normalized attributed op types | Shape/dtype variants | Op-kernel relations | Mapping event coverage | Mapping time coverage | Rank-0 trace (MB) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| plugin_graph | plugin-FL, CUDA Graph | 16.763 | 431,551 | 96 | 9,715,739.225 | 112 | 46 | 1,384 | 129 | 22.218% | 70.637% | 33.487 |
-| plugin_eager | plugin-FL, eager | 93.152 | 896,162 | 104 | 8,207,711.519 | 102 | 35 | 3,863 | 105 | 99.871% | 99.960% | 191.187 |
-| native_graph | native vLLM, CUDA Graph | 7.733 | 347,278 | 114 | 6,522,629.903 | 117 | 49 | 1,457 | 144 | 16.962% | 56.158% | 30.269 |
-| native_eager | native vLLM, eager | 32.799 | 716,851 | 123 | 11,016,806.643 | 108 | 36 | 3,349 | 125 | 98.192% | 99.428% | 163.132 |
+| plugin_graph | plugin-FL, CUDA Graph | 16.763 | 431,551 | 96 | 9,715,739.225 | 112 | 44 | 1,384 | 129 | 22.218% | 70.637% | 33.487 |
+| plugin_eager | plugin-FL, eager | 93.152 | 896,162 | 104 | 8,207,711.519 | 102 | 33 | 3,863 | 105 | 99.871% | 99.960% | 191.187 |
+| native_graph | native vLLM, CUDA Graph | 7.733 | 347,278 | 114 | 6,522,629.903 | 117 | 47 | 1,457 | 144 | 16.962% | 56.158% | 30.269 |
+| native_eager | native vLLM, eager | 32.799 | 716,851 | 123 | 11,016,806.643 | 108 | 34 | 3,349 | 125 | 98.192% | 99.428% | 163.132 |
 
 Batch wall time is measured while profiling is active. It is useful for this
 controlled comparison but is not an unprofiled throughput benchmark.
@@ -30,21 +30,40 @@ Every boolean conservation check in all four `summary.json` files is
 
 - trace, compact summary, and detailed report preserve the same kernel event
   count and duration
-- every `(operator_name, kernel_name)` relation is unique
-- `operator_list.csv` and `kernel_summary.csv` contain the same relation set
-- one operator uses one stable ID across all related kernels
-- unattributed kernels remain present as `null,null,<kernel_name>`
+- every normalized `(operator_name, operator_kind, kernel_name)` relation is
+  unique
+- every physical kernel remains present in `operator_list.csv`
+- every row has a positive integer ID
+- one classified operator uses one stable ID across all related kernels
+- unattributed NVJet kernels use one shared ID per run
+
+Operator-list relation counts by kind:
+
+| Scenario | aten | custom | runtime_operator | torch_compile | triton_compiled | unattributed | unattributed_nvjet |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| plugin_graph | 48 | 16 | 1 | 3 | 15 | 39 | 7 |
+| plugin_eager | 79 | 19 | 3 | 3 | 0 | 1 | 0 |
+| native_graph | 59 | 17 | 1 | 3 | 15 | 36 | 13 |
+| native_eager | 95 | 22 | 1 | 3 | 0 | 4 | 0 |
+
+The three `torch_compile` relations in each run share one ID and map to
+`vllm.model_executor.layers.vocab_parallel_embedding.get_masked_input_and_mask`.
 
 ## Type and shape differences
 
 Each cell below is `left / right / intersection / left-only / right-only`.
 
-| Comparison | Kernel types | Attributed operator types | Shape/dtype variants | Complete CPU op types |
+| Comparison | Kernel types | Raw attributed operator labels | Shape/dtype variants | Complete CPU op types |
 |---|---|---|---|---|
 | plugin graph vs native graph | 96 / 114 / 58 / 38 / 56 | 46 / 49 / 36 / 10 / 13 | 1,384 / 1,457 / 778 / 606 / 679 | 112 / 117 / 104 / 8 / 13 |
 | plugin eager vs native eager | 104 / 123 / 61 / 43 / 62 | 35 / 36 / 24 / 11 / 12 | 3,863 / 3,349 / 1,025 / 2,838 / 2,324 | 102 / 108 / 96 / 6 / 12 |
 | plugin graph vs plugin eager | 96 / 104 / 72 / 24 / 32 | 46 / 35 / 30 / 16 / 5 | 1,384 / 3,863 / 779 / 605 / 3,084 | 112 / 102 / 93 / 19 / 9 |
 | native graph vs native eager | 114 / 123 / 90 / 24 / 33 | 49 / 36 / 33 / 16 / 3 | 1,457 / 3,349 / 820 / 637 / 2,529 | 117 / 108 / 99 / 18 / 9 |
+
+Raw attributed labels come from `kernel_details_report.csv`. They are kept
+unchanged for trace fidelity. The normalized attributed counts in the scenario
+table come from `operator_list.csv`, where three generated Triton names are
+represented by their one known `torch.compile` source function.
 
 The eager runs expose many more logical shape/dtype variants because Python and
 PyTorch operators execute in the runtime profiling window. CUDA Graph replay
