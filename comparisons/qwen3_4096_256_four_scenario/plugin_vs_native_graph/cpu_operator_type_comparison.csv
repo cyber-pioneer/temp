@@ -2,9 +2,8 @@ operator_name,presence
 AOTDispatcher Runtime Wrapper Prologue,both
 Pregraph bytecode,both
 Torch-Compiled Region: 0/0,both
-Torch-Compiled Region: 1/0,right_only
+Torch-Compiled Region: 1/0,both
 Torch-Compiled Region: 1/1,both
-Torch-Compiled Region: 1/2,left_only
 TorchDynamo Cache Lookup,both
 _C::silu_and_mul,right_only
 _C_cache_ops::reshape_and_cache_flash,right_only

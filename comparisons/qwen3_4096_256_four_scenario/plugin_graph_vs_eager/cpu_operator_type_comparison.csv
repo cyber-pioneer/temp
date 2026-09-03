@@ -4,8 +4,8 @@ Pregraph bytecode,both
 SiluAndMul,right_only
 Torch-Compiled Region: 0/0,both
 Torch-Compiled Region: 0/1,right_only
+Torch-Compiled Region: 1/0,left_only
 Torch-Compiled Region: 1/1,left_only
-Torch-Compiled Region: 1/2,left_only
 TorchDynamo Cache Lookup,both
 _C_custom_ar::all_reduce,both
 aten::_index_put_impl_,both
