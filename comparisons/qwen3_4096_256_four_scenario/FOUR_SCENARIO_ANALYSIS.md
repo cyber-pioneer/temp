@@ -19,8 +19,8 @@ runs loaded and activated `fl`.
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | plugin_graph | plugin-FL, CUDA Graph | 10.815 | 391,150 | 96 | 6,359,288.037 | 112 | 1,377 | 125 | 81 | 16.271% | 56.134% | 30.444 |
 | plugin_eager | plugin-FL, eager | 95.867 | 896,162 | 104 | 9,624,662.593 | 102 | 3,863 | 105 | 41 | 99.871% | 99.966% | 191.447 |
-| native_graph | native vLLM, CUDA Graph | 7.785 | 347,278 | 114 | 6,872,143.185 | 117 | 1,457 | 144 | 85 | 16.962% | 58.357% | 30.293 |
-| native_eager | native vLLM, eager | 32.977 | 706,737 | 116 | 28,374,945.862 | 108 | 3,278 | 118 | 45 | 98.191% | 99.778% | 174.411 |
+| native_graph | native vLLM, CUDA Graph | 7.785 | 347,278 | 114 | 6,872,143.185 | 117 | 1,457 | 144 | 82 | 16.962% | 58.357% | 30.293 |
+| native_eager | native vLLM, eager | 32.977 | 706,737 | 116 | 28,374,945.862 | 108 | 3,278 | 118 | 40 | 98.191% | 99.778% | 174.411 |
 
 The profiled batch time includes profiler overhead and is not an unprofiled
 throughput benchmark. Kernel duration is the sum of rank-0 runtime kernel
@@ -45,9 +45,14 @@ Classification rules used by `operator_list.csv`:
 - `moe_align_block_size_stage1`, `stage2_vec`, `stage3`, and `stage4` are
   normalized to `moe_align_block_size` and share one operator ID. Both plugin
   runs contain all four stages with ID 1.
-- Except for that explicit stage family, `custom` rows use kernel-granularity
-  identity. Different kernel names therefore receive different operator IDs,
-  even when their source operator name is the same.
+- Except for that explicit stage family, `custom` rows use the demangled
+  namespace-qualified callable as their kernel identity. A leading `void`, the
+  outer function parameter list, and C++ template arguments do not participate
+  in the identity. The source runtime operator label does not participate
+  either. Parameter and template-specialization variants of the same callable
+  therefore share one operator ID even when their source labels differ, while
+  different namespaces or callable names remain distinct. Full source labels
+  and kernel names remain unchanged in all CSV rows.
 - Pure communication rows have `operator_id=null`, use
   `operator_kind=communication`, and are sorted after every numbered row.
 - A fused operator that performs communication and computation, such as
