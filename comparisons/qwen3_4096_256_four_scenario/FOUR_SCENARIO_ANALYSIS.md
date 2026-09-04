@@ -44,7 +44,9 @@ Classification rules used by `operator_list.csv`:
 
 - `moe_align_block_size_stage1`, `stage2_vec`, `stage3`, and `stage4` are
   normalized to `moe_align_block_size` and share one operator ID. Both plugin
-  runs contain all four stages with ID 1.
+  runs contain all four stages.
+- ATen operators receive the first numbered IDs and appear before every other
+  operator kind. Pure communication rows remain unnumbered and last.
 - Except for that explicit stage family, `custom` rows use the demangled
   namespace-qualified callable as their kernel identity. A leading `void`, the
   outer function parameter list, and C++ template arguments do not participate
