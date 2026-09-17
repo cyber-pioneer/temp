@@ -1,0 +1,107 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+## Call CompiledFxGraph f2vprvg2xf4p2f5bu4o52pfv5bvt...         0.00%       0.000us         0.00%       0.000us       0.000us        5.933s        40.54%        5.933s       8.990ms           660  
+                                execute_new_0_cached_64         0.00%       0.000us         0.00%       0.000us       0.000us        5.309s        36.27%        5.309s      11.957ms           444  
+                         symm_mem::two_shot_all_reduce_         0.09%      14.428ms         0.17%      25.443ms      18.805us        5.071s        34.65%        5.075s       3.751ms          1353  
+void (anonymous namespace)::two_shot_all_reduce_kern...         0.00%       0.000us         0.00%       0.000us       0.000us        5.071s        34.65%        5.071s       3.748ms          1353  
+void flashinfer::trtllm_allreduce_fusion::allreduce_...         0.00%       0.000us         0.00%       0.000us       0.000us        3.168s        21.65%        3.168s     274.069us         11560  
+           vllm::flashinfer_trtllm_fused_allreduce_norm         1.33%     201.990ms         1.56%     236.757ms     179.361us        3.106s        21.22%        3.106s       2.353ms          1320  
+## Call CompiledFxGraph ftt6b2bou53j2p5akbadlmiea27d...         0.00%       0.000us         0.00%       0.000us       0.000us        2.916s        19.93%        2.916s       8.838ms           330  
+                                       fused_moe_kernel         0.00%       0.000us         0.00%       0.000us       0.000us        1.967s        13.44%        1.967s      85.062us         23120  
+## Call CompiledFxGraph f5nh3b7xvqd47xy2icwnapgtamr2...         0.00%       0.000us         0.00%       0.000us       0.000us        1.367s         9.34%        1.367s       4.601ms           297  
+                                 execute_new_1_cached_0         0.00%       0.000us         0.00%       0.000us       0.000us        1.256s         8.58%        1.256s        1.256s             1  
+                               kernel_unified_attention         0.00%       0.000us         0.00%       0.000us       0.000us     836.530ms         5.72%     836.530ms     289.457us          2890  
+                               vllm::moe_forward_shared        12.44%        1.892s        30.18%        4.592s       3.479ms     832.075ms         5.69%        1.061s     803.955us          1320  
+                             mm_kernel_general_host_tma         0.00%       0.000us         0.00%       0.000us       0.000us     798.550ms         5.46%     798.550ms      25.120us         31790  
+                                               aten::mm        10.11%        1.538s        11.08%        1.685s     183.199us     700.245ms         4.78%     710.104ms      77.194us          9199  
+void vllm::cross_device_reduce_1stage<__nv_bfloat16,...         0.00%       0.000us         0.00%       0.000us       0.000us     669.223ms         4.57%     669.223ms      63.760us         10496  
+                    vllm::unified_attention_with_output         0.78%     118.881ms         1.01%     154.172ms     467.189us     582.859ms         3.98%     582.859ms       1.766ms           330  
+                                execute_new_2_cached_51         0.00%       0.000us         0.00%       0.000us       0.000us     363.758ms         2.49%     363.758ms     363.758ms             1  
+                                execute_new_2_cached_33         0.00%       0.000us         0.00%       0.000us       0.000us     360.151ms         2.46%     360.151ms     360.151ms             1  
+                                execute_new_2_cached_13         0.00%       0.000us         0.00%       0.000us       0.000us     360.132ms         2.46%     360.132ms     360.132ms             1  
+                                execute_new_2_cached_55         0.00%       0.000us         0.00%       0.000us       0.000us     359.729ms         2.46%     359.729ms     359.729ms             1  
+                                execute_new_2_cached_41         0.00%       0.000us         0.00%       0.000us       0.000us     358.155ms         2.45%     358.155ms     358.155ms             1  
+                                execute_new_1_cached_63         0.00%       0.000us         0.00%       0.000us       0.000us     357.887ms         2.45%     357.887ms     357.887ms             1  
+                                execute_new_2_cached_11         0.00%       0.000us         0.00%       0.000us       0.000us     356.159ms         2.43%     356.159ms     356.159ms             1  
+                                execute_new_2_cached_59         0.00%       0.000us         0.00%       0.000us       0.000us     355.276ms         2.43%     355.276ms     355.276ms             1  
+                                execute_new_2_cached_53         0.00%       0.000us         0.00%       0.000us       0.000us     354.010ms         2.42%     354.010ms     354.010ms             1  
+                                 execute_new_2_cached_5         0.00%       0.000us         0.00%       0.000us       0.000us     353.615ms         2.42%     353.615ms     353.615ms             1  
+                                 execute_new_2_cached_3         0.00%       0.000us         0.00%       0.000us       0.000us     352.369ms         2.41%     352.369ms     352.369ms             1  
+                                execute_new_2_cached_37         0.00%       0.000us         0.00%       0.000us       0.000us     351.574ms         2.40%     351.574ms     351.574ms             1  
+                                execute_new_2_cached_61         0.00%       0.000us         0.00%       0.000us       0.000us     351.277ms         2.40%     351.277ms     351.277ms             1  
+                                execute_new_2_cached_35         0.00%       0.000us         0.00%       0.000us       0.000us     350.840ms         2.40%     350.840ms     350.840ms             1  
+                                execute_new_2_cached_43         0.00%       0.000us         0.00%       0.000us       0.000us     350.818ms         2.40%     350.818ms     350.818ms             1  
+                                execute_new_2_cached_29         0.00%       0.000us         0.00%       0.000us       0.000us     350.121ms         2.39%     350.121ms     350.121ms             1  
+                                execute_new_2_cached_57         0.00%       0.000us         0.00%       0.000us       0.000us     349.580ms         2.39%     349.580ms     349.580ms             1  
+                                execute_new_2_cached_49         0.00%       0.000us         0.00%       0.000us       0.000us     349.004ms         2.38%     349.004ms     349.004ms             1  
+                                 execute_new_2_cached_7         0.00%       0.000us         0.00%       0.000us       0.000us     348.760ms         2.38%     348.760ms     348.760ms             1  
+                                execute_new_2_cached_21         0.00%       0.000us         0.00%       0.000us       0.000us     348.253ms         2.38%     348.253ms     348.253ms             1  
+                                execute_new_2_cached_47         0.00%       0.000us         0.00%       0.000us       0.000us     346.836ms         2.37%     346.836ms     346.836ms             1  
+                                execute_new_2_cached_45         0.00%       0.000us         0.00%       0.000us       0.000us     346.634ms         2.37%     346.634ms     346.634ms             1  
+                                execute_new_2_cached_31         0.00%       0.000us         0.00%       0.000us       0.000us     346.523ms         2.37%     346.523ms     346.523ms             1  
+                                execute_new_2_cached_39         0.00%       0.000us         0.00%       0.000us       0.000us     346.374ms         2.37%     346.374ms     346.374ms             1  
+                                execute_new_2_cached_23         0.00%       0.000us         0.00%       0.000us       0.000us     345.945ms         2.36%     345.945ms     345.945ms             1  
+                                execute_new_2_cached_19         0.00%       0.000us         0.00%       0.000us       0.000us     345.742ms         2.36%     345.742ms     345.742ms             1  
+                                 execute_new_2_cached_9         0.00%       0.000us         0.00%       0.000us       0.000us     345.527ms         2.36%     345.527ms     345.527ms             1  
+                                execute_new_2_cached_27         0.00%       0.000us         0.00%       0.000us       0.000us     345.198ms         2.36%     345.198ms     345.198ms             1  
+                                execute_new_2_cached_25         0.00%       0.000us         0.00%       0.000us       0.000us     344.864ms         2.36%     344.864ms     344.864ms             1  
+                                execute_new_2_cached_15         0.00%       0.000us         0.00%       0.000us       0.000us     344.629ms         2.35%     344.629ms     344.629ms             1  
+                                execute_new_2_cached_17         0.00%       0.000us         0.00%       0.000us       0.000us     344.597ms         2.35%     344.597ms     344.597ms             1  
+                                 execute_new_2_cached_1         0.00%       0.000us         0.00%       0.000us       0.000us     337.312ms         2.30%     337.312ms     337.312ms             1  
+                          vllm::qwen_gdn_attention_core         6.56%     998.488ms        21.80%        3.317s       3.350ms     328.961ms         2.25%     412.664ms     416.832us           990  
+_fused_recurrent_gated_delta_rule_packed_decode_kern...         0.00%       0.000us         0.00%       0.000us       0.000us     322.541ms         2.20%     322.541ms      41.997us          7680  
+void cutlass::device_kernel<flat::kernel::FlatKernel...         0.00%       0.000us         0.00%       0.000us       0.000us     195.906ms         1.34%     195.906ms     197.885us           990  
+                                            aten::copy_         1.12%     170.002ms         3.39%     515.697ms      22.181us     180.460ms         1.23%     186.439ms       8.019us         23249  
+                         Memcpy DtoD (Device -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us     134.664ms         0.92%     134.664ms      14.533us          9266  
+## Call CompiledFxGraph fuc5jf6ov4frtv2vxtoxnyencj4n...         0.00%       0.000us         0.00%       0.000us       0.000us     126.373ms         0.86%     126.373ms       3.829ms            33  
+                               _C_custom_ar::all_reduce         0.02%       3.432ms         0.06%       8.716ms      34.047us     121.581ms         0.83%     121.581ms     474.925us           256  
+                      nvjet_tst_64x8_64x16_2x4_h_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us     119.647ms         0.82%     119.647ms       6.055us         19760  
+triton_red_fused__to_copy_add_copy__fused_add_rms_no...         0.00%       0.000us         0.00%       0.000us       0.000us     101.206ms         0.69%     101.206ms      11.673us          8670  
+triton_red_fused__to_copy_add_copy__fused_add_rms_no...         0.16%      24.972ms         0.94%     142.782ms     144.224us      80.443ms         0.55%      80.443ms      81.256us           990  
+                      nvjet_tst_64x8_64x16_1x1_h_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us      69.868ms         0.48%      69.868ms       6.904us         10120  
+                             topk_gating_softmax_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      64.926ms         0.44%      64.926ms       5.616us         11560  
+                              _causal_conv1d_fwd_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      60.829ms         0.42%      60.829ms      61.443us           990  
+              nvjet_tst_256x128_64x4_1x2_h_bz_coopA_TNT         0.00%       0.000us         0.00%       0.000us       0.000us      55.848ms         0.38%      55.848ms      22.162us          2520  
+                                     triton_per_fused_1         0.00%       0.000us         0.00%       0.000us       0.000us      54.912ms         0.38%      54.912ms       6.334us          8670  
+                                execute_new_0_cached_63         0.00%       0.000us         0.00%       0.000us       0.000us      50.428ms         0.34%      50.428ms      12.607ms             4  
+                                mul_broadcast_2d_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      47.695ms         0.33%      47.695ms       4.126us         11560  
+                                _fused_post_conv_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      46.056ms         0.31%      46.056ms      46.521us           990  
+                                 triton_poi_fused_add_4         0.00%       0.000us         0.00%       0.000us       0.000us      44.457ms         0.30%      44.457ms       5.128us          8670  
+                                           zeros_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      43.861ms         0.30%      43.861ms       1.825us         24040  
+                     nvjet_tst_320x64_64x4_2x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us      41.773ms         0.29%      41.773ms     180.054us           232  
+                     nvjet_tst_64x32_64x16_4x2_h_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us      41.213ms         0.28%      41.213ms       4.311us          9560  
+                        moe_align_block_size_stage2_vec         0.00%       0.000us         0.00%       0.000us       0.000us      37.916ms         0.26%      37.916ms       3.338us         11360  
+                                     triton_poi_fused_0         0.00%       0.000us         0.00%       0.000us       0.000us      37.678ms         0.26%      37.678ms       3.259us         11560  
+                            moe_align_block_size_stage4         0.00%       0.000us         0.00%       0.000us       0.000us      35.808ms         0.24%      35.808ms       3.152us         11360  
+                                     triton_per_fused_1         0.11%      17.350ms         0.16%      23.981ms      24.224us      35.444ms         0.24%      35.444ms      35.802us           990  
+                                execute_new_0_cached_44         0.00%       0.000us         0.00%       0.000us       0.000us      32.943ms         0.23%      32.943ms      16.472ms             2  
+triton_red_fused__to_copy_add_copy__fused_add_rms_no...         0.00%       0.000us         0.00%       0.000us       0.000us      32.735ms         0.22%      32.735ms      11.327us          2890  
+                                 triton_poi_fused_add_4         0.15%      22.187ms         0.89%     135.094ms     136.458us      32.167ms         0.22%      32.167ms      32.492us           990  
+triton_poi_fused__to_copy__unsafe_view_add_clone_lin...         0.00%       0.000us         0.00%       0.000us       0.000us      30.978ms         0.21%      30.978ms       3.573us          8670  
+                                              aten::cat         1.97%     299.774ms         2.13%     323.373ms     146.257us      30.382ms         0.21%      30.385ms      13.743us          2211  
+                                 cat_copy_func_kernel_4         0.00%       0.000us         0.00%       0.000us       0.000us      30.382ms         0.21%      30.382ms      15.824us          1920  
+                                     record_param_comms         0.15%      22.811ms         0.18%      27.989ms      96.849us      29.954ms         0.20%      29.954ms     103.646us           289  
+ncclDevKernel_AllGather_RING_LL(ncclDevKernelArgsSto...         0.00%       0.000us         0.00%       0.000us       0.000us      29.954ms         0.20%      29.954ms     103.646us           289  
+                                  nccl:_all_gather_base         0.00%       0.000us         0.00%       0.000us       0.000us      29.954ms         0.20%      29.954ms     103.646us           289  
+                            moe_align_block_size_stage1         0.00%       0.000us         0.00%       0.000us       0.000us      28.027ms         0.19%      28.027ms       2.467us         11360  
+                                              aten::mul         3.13%     476.815ms         3.26%     495.448ms     375.339us      27.882ms         0.19%      28.547ms      21.626us          1320  
+                      triton_poi_fused_mul_silu_slice_0         0.00%       0.000us         0.00%       0.000us       0.000us      26.666ms         0.18%      26.666ms       2.307us         11560  
+          fused_sigmoid_gating_delta_rule_update_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      26.170ms         0.18%      26.170ms      27.261us           960  
+                    nvjet_tst_128x128_64x6_2x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us      25.992ms         0.18%      25.992ms      20.306us          1280  
+triton_red_fused__to_copy_add_copy__fused_add_rms_no...         0.06%       8.582ms         1.04%     157.782ms     478.126us      25.866ms         0.18%      25.866ms      78.382us           330  
+                           _causal_conv1d_update_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      25.506ms         0.17%      25.506ms       3.321us          7680  
+                                          memcpy32_post         0.00%       0.000us         0.00%       0.000us       0.000us      25.112ms         0.17%      25.112ms       1.226us         20480  
+                                execute_new_0_cached_42         0.00%       0.000us         0.00%       0.000us       0.000us      24.625ms         0.17%      24.625ms      12.312ms             2  
+                                 execute_new_0_cached_8         0.00%       0.000us         0.00%       0.000us       0.000us      24.444ms         0.17%      24.444ms      12.222ms             2  
+                                execute_new_0_cached_62         0.00%       0.000us         0.00%       0.000us       0.000us      24.412ms         0.17%      24.412ms      12.206ms             2  
+                                         moe_sum_kernel         0.00%       0.000us         0.00%       0.000us       0.000us      24.204ms         0.17%      24.204ms       2.364us         10240  
+                                execute_new_0_cached_38         0.00%       0.000us         0.00%       0.000us       0.000us      24.078ms         0.16%      24.078ms      12.039ms             2  
+                                execute_new_0_cached_58         0.00%       0.000us         0.00%       0.000us       0.000us      23.946ms         0.16%      23.946ms      11.973ms             2  
+                                execute_new_0_cached_54         0.00%       0.000us         0.00%       0.000us       0.000us      23.852ms         0.16%      23.852ms      11.926ms             2  
+                                execute_new_0_cached_56         0.00%       0.000us         0.00%       0.000us       0.000us      23.845ms         0.16%      23.845ms      11.922ms             2  
+                                execute_new_0_cached_52         0.00%       0.000us         0.00%       0.000us       0.000us      23.796ms         0.16%      23.796ms      11.898ms             2  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 15.213s
+Self CUDA time total: 14.636s
+
